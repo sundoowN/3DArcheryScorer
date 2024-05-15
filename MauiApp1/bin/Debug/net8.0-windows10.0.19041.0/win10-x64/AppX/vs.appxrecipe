@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Projects\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-14T03:06:59.057</Modified>
+      <Modified>2024-05-15T00:37:31.759</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-05-14T03:06:58.854</Modified>
+      <Modified>2024-05-15T00:32:58.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.runtimeconfig.json">
       <PackagePath>MauiApp1.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2024-05-14T03:06:58.047</Modified>
+      <Modified>2024-05-15T00:37:29.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2024-05-14T03:06:58.239</Modified>
+      <Modified>2024-05-15T00:37:30.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -375,7 +375,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.deps.json">
       <PackagePath>MauiApp1.deps.json</PackagePath>
-      <Modified>2024-05-13T03:06:07.736</Modified>
+      <Modified>2024-05-15T00:32:58.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sundo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
