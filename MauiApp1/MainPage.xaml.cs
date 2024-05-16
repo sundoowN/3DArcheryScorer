@@ -87,7 +87,7 @@ namespace MauiApp1
             {
                 targetImage.Source = "cbear.jpg";
             }
-            if (targetPicker.SelectedItem.Equals("Chamois"))
+            if (targetPicker.SelectedItem.Equals("Chamois")) //check 
             {
                 targetImage.Source = " chamoi.jpg";
             }
@@ -99,7 +99,7 @@ namespace MauiApp1
             {
                 targetImage.Source = "grazingdoe.jpg";
             }
-            if (targetPicker.SelectedItem.Equals("HillCountry Buck"))
+            if (targetPicker.SelectedItem.Equals("HillCountry Buck")) //check
             {
                 targetImage.Source = "hcbuck.jpg";
             }

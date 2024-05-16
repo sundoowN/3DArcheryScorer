@@ -13,10 +13,12 @@
             Clicked="ReviewScores">
         </Button>
         <Button
-            Text="Bow Setups">            
+            Text="Bow Setups"
+            Clicked="BowSetups">            
         </Button>
         <Button
-            Text="Arrow Setups">
+            Text="Arrow Setups"
+            Clicked="ArrowSetups">
         </Button>
     </VerticalStackLayout>
 </ContentPage>

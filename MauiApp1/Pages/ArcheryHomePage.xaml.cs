@@ -7,26 +7,24 @@ public partial class ArcheryHomePage : ContentPage
 		InitializeComponent();
 	}
 
-    private void OpenScoringApplication(object sender, EventArgs e)
+    private async void OpenScoringApplication(object sender, EventArgs e)
     {
-		Navigation.PushModalAsync(new MainPage()); 
+		await Navigation.PushAsync(new MainPage()); 
 
     }
 
-    private void ReviewScores(object sender, EventArgs e)
+    private async void ReviewScores(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new ScoreHistoryPage());  
+        await Navigation.PushAsync(new ScoreHistoryPage());  
     }
 
-    private void BowSetups(object sender, EventArgs e)
+    private async void BowSetups(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new BowSetupsPage()); 
+        await Navigation.PushAsync(new BowSetupsPage()); 
     }
 
-    private void ArrowSetups(object sender, EventArgs e)
+    private async void ArrowSetups(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new ArrowSetupsPage());
-
-        var navigation = new NavigationPage(new ArrowSetupsPage()); 
+        await Navigation.PushAsync(new ArrowSetupsPage());
     }
 }

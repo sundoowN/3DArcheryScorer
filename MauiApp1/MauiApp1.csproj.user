@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-ios</ActiveDebugFramework>
-    <ActiveDebugProfile>iPhone (146)</ActiveDebugProfile>
+    <ActiveDebugProfile>Local Device</ActiveDebugProfile>
     <SelectedPlatformGroup>LocalDevice</SelectedPlatformGroup>
     <DeveloperId>G4928WG2DK</DeveloperId>
     <DevelopmentTeamId>G4928WG2DK</DevelopmentTeamId>
