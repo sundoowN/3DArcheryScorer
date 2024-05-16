@@ -40,6 +40,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ArcheryHome
 build_metadata.AdditionalFiles.TargetPath = Pages\ArcheryHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ArcheryHomePage.xaml
 
+[D:/Projects/MauiApp1/MauiApp1/Pages/ArrowSetupsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ArrowSetupsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ArrowSetupsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ArrowSetupsPage.xaml
+
+[D:/Projects/MauiApp1/MauiApp1/Pages/BowSetupsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.BowSetupsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BowSetupsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BowSetupsPage.xaml
+
+[D:/Projects/MauiApp1/MauiApp1/Pages/ScoreHistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreHistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ScoreHistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ScoreHistoryPage.xaml
+
 [D:/Projects/MauiApp1/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Resources.Styles.Colors.xaml

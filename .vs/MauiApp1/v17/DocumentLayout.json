@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\MauiApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\archeryhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\archeryhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\archeryhomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\archeryhomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,8 +19,58 @@
       "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\ee7a81a03002bcf48771cc2098cf0ecbfdb7f3c7\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\archeryhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\archeryhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\scorehistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\scorehistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\models\\scoredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\models\\scoredata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\bowsetupspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\bowsetupspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\pages\\arrowsetupspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\pages\\arrowsetupspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|d:\\projects\\mauiapp1\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{247C162C-3D7B-47FC-AA99-F506D11C05D1}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\acad2905dd848194875995cb77549ee8373a03d4\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,46 +87,59 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "AppDelegate.cs",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\Platforms\\iOS\\AppDelegate.cs",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeToolTip": "MauiApp1\\Platforms\\iOS\\AppDelegate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T01:28:06.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ArcheryHomePage.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArcheryHomePage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Pages\\ArcheryHomePage.xaml.cs",
               "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArcheryHomePage.xaml.cs",
               "RelativeToolTip": "MauiApp1\\Pages\\ArcheryHomePage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T00:32:09.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "ArcheryHomePage.xaml",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArcheryHomePage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\Pages\\ArcheryHomePage.xaml",
-              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArcheryHomePage.xaml*",
-              "RelativeToolTip": "MauiApp1\\Pages\\ArcheryHomePage.xaml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArcheryHomePage.xaml",
+              "RelativeToolTip": "MauiApp1\\Pages\\ArcheryHomePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-15T00:32:07.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml.cs",
               "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml.cs",
               "RelativeToolTip": "MauiApp1\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T00:26:01.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ScoreData.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Models\\ScoreData.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Models\\ScoreData.cs",
@@ -108,82 +151,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
               "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAjAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-06T02:41:12.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ViewModel.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\ViewModel.cs",
               "RelativeDocumentMoniker": "MauiApp1\\ViewModel.cs",
               "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\ViewModel.cs",
               "RelativeToolTip": "MauiApp1\\ViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T03:17:57.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "Xamarin.Android.Aapt2.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Aapt2.targets",
+              "ViewState": "AQIAALgAAAAAAAAAAAAtwNUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-05-15T03:39:09.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
               "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAD4vx8AAAAIAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAArwBwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T02:44:05.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml.sg.cs",
-              "DocumentMoniker": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\acad2905dd848194875995cb77549ee8373a03d4\\MainPage.xaml.sg.cs",
-              "ToolTip": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\acad2905dd848194875995cb77549ee8373a03d4\\MainPage.xaml.sg.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:50:40.92Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml",
-              "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
-              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml",
-              "RelativeToolTip": "MauiApp1\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T03:25:54.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\AppShell.xaml",
-              "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
-              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\AppShell.xaml",
-              "RelativeToolTip": "MauiApp1\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T02:28:10.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MauiProgram.cs",
@@ -191,7 +208,115 @@
               "RelativeToolTip": "MauiApp1\\MauiProgram.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T03:49:50.34Z"
+              "WhenOpened": "2024-04-30T03:49:50.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "splash.svg",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Resources\\Splash\\splash.svg",
+              "RelativeDocumentMoniker": "MauiApp1\\Resources\\Splash\\splash.svg",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Resources\\Splash\\splash.svg",
+              "RelativeToolTip": "MauiApp1\\Resources\\Splash\\splash.svg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-05-15T03:39:05.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\ee7a81a03002bcf48771cc2098cf0ecbfdb7f3c7\\MainPage.xaml.sg.cs",
+              "ToolTip": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\ee7a81a03002bcf48771cc2098cf0ecbfdb7f3c7\\MainPage.xaml.sg.cs [Read Only]",
+              "ViewState": "AQIAABcAAAAAAAAAAAAiwDEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T00:35:12.678Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-15T03:38:15.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ScoreHistoryPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ScoreHistoryPage.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\Pages\\ScoreHistoryPage.xaml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ScoreHistoryPage.xaml",
+              "RelativeToolTip": "MauiApp1\\Pages\\ScoreHistoryPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:03:57.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BowSetupsPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\BowSetupsPage.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\Pages\\BowSetupsPage.xaml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\BowSetupsPage.xaml",
+              "RelativeToolTip": "MauiApp1\\Pages\\BowSetupsPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:03:41.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\App.xaml",
+              "RelativeToolTip": "MauiApp1\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T03:25:54.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ArrowSetupsPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArrowSetupsPage.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\Pages\\ArrowSetupsPage.xaml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\Pages\\ArrowSetupsPage.xaml",
+              "RelativeToolTip": "MauiApp1\\Pages\\ArrowSetupsPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T01:04:14.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainPage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\acad2905dd848194875995cb77549ee8373a03d4\\MainPage.xaml.sg.cs",
+              "ToolTip": "C:\\Users\\sundo\\AppData\\Local\\Temp\\.vsdbgsrc\\acad2905dd848194875995cb77549ee8373a03d4\\MainPage.xaml.sg.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T02:50:40.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Projects\\MauiApp1\\MauiApp1\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
+              "ToolTip": "D:\\Projects\\MauiApp1\\MauiApp1\\AppShell.xaml",
+              "RelativeToolTip": "MauiApp1\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-08T02:28:10.751Z"
             }
           ]
         }

@@ -22,7 +22,7 @@
                     SelectedItem="{Binding SelectedTarget}"
                     SelectedIndexChanged="OnSelectedIndexChanged"/>
             <Image
-                Source="dotnet_bot.png"
+                Source="{Binding }"
                 x:Name="targetImage"
                 HeightRequest="185"
                 Aspect="AspectFit"

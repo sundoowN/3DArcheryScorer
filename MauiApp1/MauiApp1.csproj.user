@@ -2,8 +2,8 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugFramework>net8.0-windows10.0.19041.0</ActiveDebugFramework>
-    <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
+    <ActiveDebugFramework>net8.0-ios</ActiveDebugFramework>
+    <ActiveDebugProfile>iPhone (146)</ActiveDebugProfile>
     <SelectedPlatformGroup>LocalDevice</SelectedPlatformGroup>
     <DeveloperId>G4928WG2DK</DeveloperId>
     <DevelopmentTeamId>G4928WG2DK</DevelopmentTeamId>
@@ -17,6 +17,15 @@
   </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="Pages\ArcheryHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\ArrowSetupsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\BowSetupsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\ScoreHistoryPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
