@@ -13,10 +13,10 @@ namespace MauiApp1
         int count = 0;
         public List<string> TargetsList = new List<string>();
         public MauiProgram maui;
-        public string selectedTarget;
+        public string selectedTarget = string.Empty;
         public ViewModel model;
         public int targetCounter;
-        public List<string> scores; 
+        public List<string> scores = []; 
        public MainPage()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace MauiApp1
             SetTargetImage(); 
         }
 
-        private void SubmitUserScore(object sender, EventArgs e)
+        private async void SubmitUserScore(object sender, EventArgs e)
         {
             if (targetCounter <= 20)
             {
@@ -42,19 +42,11 @@ namespace MauiApp1
                 string json = JsonConvert.SerializeObject(Score);
                 model.AddScoreDataToFile(json); 
             }
+            else if(targetCounter == 21)
+            {
+                await DisplayAlert("Alert", "Round is over.", "OK");
+            }
             targetCounter++; 
-            //var path = GetScoreDataFolderLocation();
-            //var dateAndTime = DateTime.Now;
-            //var date = dateAndTime.ToString("MM-dd-yy");
-            //var newPath = Path.Combine(path, "Course" + date + ".json");
-            //if (File.Exists(newPath))
-            //{
-            //    File.AppendAllText(newPath, json);
-            //}
-            //else
-            //{
-            //    File.WriteAllText(newPath, json);
-            //}
         }
 
         public void SetTargetImage()
@@ -87,9 +79,9 @@ namespace MauiApp1
             {
                 targetImage.Source = "cbear.jpg";
             }
-            if (targetPicker.SelectedItem.Equals("Chamois")) //check 
+            if (targetPicker.SelectedItem.Equals("Chamois"))
             {
-                targetImage.Source = " chamoi.jpg";
+                targetImage.Source = "chamoi.jpg";
             }
             if (targetPicker.SelectedItem.Equals("Coyote"))
             {
@@ -105,7 +97,7 @@ namespace MauiApp1
             }
             if (targetPicker.SelectedItem.Equals("Howling Wolf"))
             {
-                targetImage.Source = "howlwolf.jpg";
+                targetImage.Source = "howlwolf.jpeg";
             }
             if (targetPicker.SelectedItem.Equals("Hyena"))
             {
@@ -167,8 +159,9 @@ namespace MauiApp1
 
         public string GetScoreDataFolderLocation()
         {
-            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location); 
-            
+
+            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+
             var directory = new DirectoryInfo(anotherDir ?? Directory.GetCurrentDirectory());
             var path = string.Empty; 
 

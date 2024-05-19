@@ -50,8 +50,28 @@ namespace MauiApp1
 
         public string GetScoreDataFolderLocation()
         {
-            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            var platform = DeviceInfo.Current;
+            if (platform.Manufacturer.Equals("Apple"))
+            {
+                var firstDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
+                var assembly = typeof(App).GetTypeInfo().Assembly;
+                var loc = FileSystem.AppDataDirectory;
+                var locs = FileSystem.Current.AppDataDirectory;
+                var pathsa = new DirectoryInfo(locs);
+                var application = pathsa.Parent;
+                var scorePath = application.ToString + @"\ScoreData"; 
+                var scoredatafolder = Directory.CreateDirectory(scorePath);  ; 
+
+
+                while (pathsa != null)
+                {
+                    pathsa = pathsa.Parent;
+                    
+                    var pathsa2 = Directory.GetDirectories(pathsa.ToString());
+                }
+            } 
+            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
             var directory = new DirectoryInfo(anotherDir ?? Directory.GetCurrentDirectory());
             var path = string.Empty;
 
@@ -59,10 +79,13 @@ namespace MauiApp1
             {
                 directory = directory.Parent;
                 var folders = directory.GetDirectories();
-                if (folders.Length == 8)
+                if (folders.Length == 9)
                 {
-                    var folder = folders[6];
-                    path = folder.FullName;
+                    var fold = folders.Where((r) => r.Name.Contains("ScoreData")); 
+                    foreach(var thing in fold)
+                    {
+                        path = thing.ToString(); 
+                    }
                 }
             }
             return path;

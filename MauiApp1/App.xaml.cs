@@ -8,7 +8,7 @@ namespace MauiApp1
         {
             InitializeComponent();
             var navigation = new NavigationPage(new ArcheryHomePage());
-            MainPage = navigation; 
+            MainPage = navigation;
             //MainPage = new ArcheryHomePage();  
         }
     }
