@@ -15,7 +15,7 @@ public partial class ArcheryHomePage : ContentPage
 
     private async void ReviewScores(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ScoreHistoryPage());  
+        await Navigation.PushAsync(new ScoreListPage());  
     }
 
     private async void BowSetups(object sender, EventArgs e)

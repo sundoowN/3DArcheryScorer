@@ -20,7 +20,7 @@ namespace MauiApp1
         {
             AddTargetsToList(); 
             PopulateScoresPicker();
-            PopulateYardagesPickers(); 
+            PopulateYardagesPickers();
         }
         public void AddTargetsToList()
         {
@@ -132,5 +132,6 @@ namespace MauiApp1
             }
             return path;
         }
+
     }
 }
