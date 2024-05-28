@@ -17,6 +17,7 @@
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Label x:Name="targetLabel"></Label>
             <Picker Title="Select a target"
                     x:Name="targetPicker"
                     ItemsSource="{Binding Targets}"

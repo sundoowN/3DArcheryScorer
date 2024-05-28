@@ -16,25 +16,14 @@ namespace MauiApp1
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<SqlDb>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build(); 
         }
-
-        public List<string> PopulateTargetsList()
-        {
-            //TODO: populate targets by traversing the filenames
-            //Loop through the folder and get the file names to populate the list. 
-            var folder = @"D:\Projects\MauiApp1\MauiApp1\TargetImages\";
-            string[] targets = Directory.GetFiles(folder);
-
-            foreach (string name in targets)
-            {
-                targetNames.Add(name); 
-            }
-            return targetNames; 
-        }
+        
     }
 }

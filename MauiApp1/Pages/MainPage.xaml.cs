@@ -1,6 +1,6 @@
 ﻿using MauiApp1.Models;
 using MauiApp1.Pages;
-using Microsoft.UI.Windowing;
+using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using System;
 using System.Net.Http.Json;
@@ -16,13 +16,14 @@ namespace MauiApp1
         public MauiProgram maui;
         public string selectedTarget = string.Empty;
         public ViewModel model;
-        public int targetCounter;
+        public int targetCounter = 1;
         //public List<string> scores = [];
         public SqlDb db;
         public string RangeDate; 
        public MainPage()
         {
             InitializeComponent();
+            targetLabel.Text = "Target #" + targetCounter.ToString(); 
             maui = new MauiProgram();
             model = new ViewModel();
             db = new SqlDb();
@@ -46,13 +47,15 @@ namespace MauiApp1
                 var st = targetPicker.SelectedItem.ToString();
                 var score = Convert.ToInt32(ScorePicker.SelectedItem);
                 var notes = Notestb.Text.ToString();
-                await db.AddScoreData(st, jd, ad, score, notes);
+                await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
             }
             else if(targetCounter == 21)
             {
                 await DisplayAlert("Alert", "Round is over.", "OK");
             }
-            targetCounter++; 
+            await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
+            targetCounter++;
+            targetLabel.Text = "Target #" + targetCounter.ToString(); 
         }
 
         public void SetTargetImage()
@@ -186,7 +189,10 @@ namespace MauiApp1
 
         public async void GetRangeAndDate()
         {
-            var result = await DisplayPromptAsync("Range and Date", "Where are you shooting today and what's the date?");
+            var result = await DisplayPromptAsync("Range", "Where are you shooting today?");
+            var date = DateTime.Now;
+            var dates = date.ToString("MM/dd/yyyy"); 
+            result = result + " " + dates; 
             RangeDate = result; 
         }
     }

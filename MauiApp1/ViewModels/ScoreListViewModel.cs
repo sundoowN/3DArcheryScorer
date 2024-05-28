@@ -25,18 +25,18 @@ namespace MauiApp1
             //}
             
         }
-        public async void GetScoresFromDB()
+        public void GetScoresFromDB()
         {
             db = new SqlDb();
-            var scores = await db.GetAllScores();
-            await Task.Delay(5000);
+            var scores = db.GetAllDates();
+            var noDupes = scores.Distinct().ToList(); 
 
             ScoresList = [];
-            foreach (var score in scores)
+            foreach (var score in noDupes)
             {
-                ScoresList.Add(score.Target);
+                ScoresList.Add(score.RangeDate);
             }
-            //PopulateScoresHistory(); 
+            //PopulateScoresHistory();
         }
     }
 }

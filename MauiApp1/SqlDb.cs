@@ -1,12 +1,11 @@
-﻿
-using Microsoft.WindowsAppSDK.Runtime;
+﻿using Microsoft.Data.Sqlite;
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace MauiApp1
 {
     public class ScoringData
@@ -18,31 +17,35 @@ namespace MauiApp1
         public int ActualDistance { get; set; }
         public int ScoringRing { get; set; }
         public string Notes { get; set; }
+        public string RangeDate { get; set; }
     }
     public class SqlDb
     {
-        static SQLiteAsyncConnection db; 
+        public static SQLiteConnection conn;
+        public SqliteCommand connection;
+        public SQLiteAsyncConnection connection2;
+        public static string databasePath; 
         
-        static async Task Init()
+        public static async void Init()
         {
-            if (db != null)
+            if (conn != null)
             {
                 return;
             }
-            string databasePath = Path.Combine(FileSystem.AppDataDirectory, "ScoringDatabase.db3");
-            db = new SQLiteAsyncConnection(databasePath);
-            await db.CreateTableAsync<ScoringData>();
+            databasePath = Path.Combine(FileSystem.AppDataDirectory, "ScoringDatabase.db3");
+            conn = new SQLiteConnection(databasePath);
+            conn.CreateTable<ScoringData>();
         }
         public async Task<List<ScoringData>> GetAllScores()
         {
-            await Init();
-            var scores = await db.Table<ScoringData>().ToListAsync();
-            return scores; 
+            Init();
+            var scoreList = conn.Table<ScoringData>().ToList();
+            return scoreList; 
            
         }
-        public async Task AddScoreData(string target, int jd, int ad, int score, string notes)
+        public async Task AddScoreData(string target, int jd, int ad, int score, string notes, string rangeDate)
         {
-            await Init();           
+            Init();
 
             var data = new ScoringData
             {
@@ -50,9 +53,17 @@ namespace MauiApp1
                 JudgedDistance = jd,
                 ActualDistance = ad,
                 ScoringRing = score,
-                Notes = notes
+                Notes = notes,
+                RangeDate = rangeDate
             };
-            await db.InsertAsync(data);
+            conn.Insert(data);
+        }
+
+        public TableQuery<ScoringData> GetAllDates()
+        {
+            Init();
+            var datesL = conn.Table<ScoringData>().Where(r => r.RangeDate != null);
+            return datesL; 
         }
     }
 }
