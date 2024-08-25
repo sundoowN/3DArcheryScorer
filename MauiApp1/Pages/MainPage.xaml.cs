@@ -11,13 +11,10 @@ namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-        //public List<string> TargetsList = new List<string>();
         public MauiProgram maui;
         public string selectedTarget = string.Empty;
         public ViewModel model;
         public int targetCounter = 1;
-        //public List<string> scores = [];
         public SqlDb db;
         public string RangeDate; 
        public MainPage()
@@ -49,7 +46,7 @@ namespace MauiApp1
                 var notes = Notestb.Text.ToString();
                 await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
             }
-            else if(targetCounter == 21)
+            else if(targetCounter < 21)
             {
                 await DisplayAlert("Alert", "Round is over.", "OK");
             }

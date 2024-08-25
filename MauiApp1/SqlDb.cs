@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.Sqlite;
+using Microsoft.VisualStudio.PlatformUI;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace MauiApp1
 {
-    public class ScoringData
+    public class ScoringData : ObservableObject
     {
         [PrimaryKey, AutoIncrement]
         public int ScoreId { get; set; }
@@ -64,6 +65,17 @@ namespace MauiApp1
             Init();
             var datesL = conn.Table<ScoringData>().Where(r => r.RangeDate != null);
             return datesL; 
+        }
+
+        public IEnumerable<ScoringData> GetScoringDataFromDate(string date)
+        {
+            Init();
+            var listthing = new List<ScoringData>();
+            var scores = conn.Table<ScoringData>().ToList();//.Where(r => r.RangeDate.Contains(date));
+            var score1 = from u in conn.Table<ScoringData>()
+                       where u.RangeDate == date
+                       select u;
+            return score1; 
         }
     }
 }

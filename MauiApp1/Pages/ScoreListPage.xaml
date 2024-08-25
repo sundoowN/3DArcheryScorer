@@ -17,5 +17,15 @@
             x:Name="ScoreHistoryList" 
             ItemsSource="{Binding ScoresList}"
             BackgroundColor="AliceBlue"/>
+        <Button
+            Text="Review Score"
+            Clicked="PopulateScoreHistoryData">
+        </Button>
+        <ListView ItemsSource="{Binding ReviewScoreData}"
+                        x:Name="ScoreDatalv"/>
+        <Button
+            Text="Remove Score"
+            Clicked="RemoveScoreFromList">
+        </Button>
     </VerticalStackLayout>
 </ContentPage>
