@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApp1"
+             x:Class="MauiApp1.ScoreKeepingPage"
+             Title="Welcome archer!">
+    
+<ContentPage.BindingContext>
+    <local:ViewModel/>
+</ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0">
+            <Image
+                Source="asa.jpeg"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+            <StackLayout>
+                <Label x:Name="targetLabel"></Label>
+                <Picker x:Name="targetPicker"
+                    IsEnabled="True"
+                    ItemsSource="{Binding TargetsList}"
+                    SelectedItem="{Binding SelectedTarget}"
+                    SelectedIndexChanged="OnSelectedIndexChanged"/>
+            </StackLayout>
+
+            <Image
+                Source="{Binding }"
+                x:Name="targetImage"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+
+            <StackLayout>
+                <Label>Judged Yardage:</Label>
+                <Picker
+                    x:Name="JudgedYardages"
+                    ItemsSource="{Binding JudgedYardage}"/>
+            </StackLayout>
+    
+            <StackLayout>
+                <Label>Actual Yardage:</Label>
+                <Picker x:Name="ActualYardages"
+                        ItemsSource="{Binding ActualYardage}"/>
+            </StackLayout>
+
+            <Label>Score:</Label>
+            <Picker
+                x:Name="ScorePicker"
+                ItemsSource="{Binding Scores}"/>
+            <StackLayout>
+                <Label Text="Notes:"/>
+                <Entry x:Name="Notestb"></Entry>
+            </StackLayout>
+            <Button
+                x:Name="SubmitScoreBtn"
+                Text="Submit Score" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="SubmitUserScore"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

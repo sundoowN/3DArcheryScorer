@@ -10,11 +10,12 @@ namespace MauiApp1
     public class ViewModel
     {
         public List<string> Targets { get; set; }
+        public SqlDb db; 
+        public List<string> TargetsList { get; set; } = new List<string>();
         public List<int> Scores { get; set; }
         public List<int> JudgedYardage { get; set; }
         public List<int> ActualYardage { get; set; }
         public string SelectedTarget { get; set; }
-        public SqlDb db; 
 
         public ViewModel()
         {
@@ -24,11 +25,10 @@ namespace MauiApp1
         }
         public void AddTargetsToList()
         {
-            Targets = new List<string>();
-            Targets = ["African Impala", "African Warthog", "Aoudad", "Black Bear", "Black Panther",
+            TargetsList = ["African Impala", "African Warthog", "Aoudad", "Black Bear", "Black Panther",
                 "Blesbok", "Chamois", "Cinnamon Bear", "Coyote", "Grazing Doe", "HillCountry Buck", "Howling Wolf",
                 "Hyena", "Javelina", "Large Alert Deer", "Leopard", "Lynx", "Medium Deer", "Pronghorn Antelope", "Russian Boar",
-                "Turkey", "Wild Boar", "Wolf", "Wolverine", "XL Deer"];
+                "Turkey", "Wild Boar", "Wolf", "Wolverine", "XL Deer"]; 
         }
         public void PopulateScoresPicker()
         {
@@ -47,7 +47,7 @@ namespace MauiApp1
 
         public void AddScoreDataToFile(string json)
         {
-            db = new SqlDb();
+            // db = new SqlDb();
             //db.AddScoreData(); 
             var path = GetScoreDataFolderLocation();
             var dateAndTime = DateTime.Now;

@@ -9,7 +9,7 @@ public partial class ArcheryHomePage : ContentPage
 
     private async void OpenScoringApplication(object sender, EventArgs e)
     {
-		await Navigation.PushAsync(new MainPage()); 
+		await Navigation.PushAsync(new ScoreKeepingPage()); 
 
     }
 

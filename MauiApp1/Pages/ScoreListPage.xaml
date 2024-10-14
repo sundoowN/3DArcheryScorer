@@ -10,7 +10,6 @@
     <VerticalStackLayout
         Padding="30,0">
         <Label 
-            Text="Welcome to .NET!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Picker
