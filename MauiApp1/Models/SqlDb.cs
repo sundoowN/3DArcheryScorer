@@ -19,11 +19,11 @@ namespace MauiApp1
         public string Notes { get; set; }
         public string RangeDate { get; set; }
     }
+
     public class SqlDb
     {
         public static SQLiteConnection conn;
         public SqliteCommand connection;
-        public SQLiteAsyncConnection connection2;
         public static string databasePath; 
         
         public static async void Init()
@@ -41,7 +41,6 @@ namespace MauiApp1
             Init();
             var scoreList = conn.Table<ScoringData>().ToList();
             return scoreList; 
-           
         }
         public async Task AddScoreData(string target, int jd, int ad, int score, string notes, string rangeDate)
         {

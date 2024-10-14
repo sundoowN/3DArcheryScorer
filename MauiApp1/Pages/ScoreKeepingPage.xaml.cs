@@ -14,6 +14,7 @@ namespace MauiApp1
         public MauiProgram maui;
         public string selectedTarget = string.Empty;
         public ViewModel model;
+        public SqlDb db; 
         public int targetCounter = 1;
         public string RangeDate; 
         public ScoreKeepingPage()
@@ -22,10 +23,11 @@ namespace MauiApp1
             targetLabel.Text = "Target #" + targetCounter.ToString(); 
             maui = new MauiProgram();
             model = new ViewModel();
-            // if (RangeDate == null)
-            // {
-            //     GetRangeAndDate(); 
-            // }
+            db = new SqlDb(); 
+            if (RangeDate == null)
+            {
+                GetRangeAndDate(); 
+            }
         }
 
         private void OnSelectedIndexChanged(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace MauiApp1
                 var st = targetPicker.SelectedItem.ToString();
                 var score = Convert.ToInt32(ScorePicker.SelectedItem);
                 var notes = Notestb.Text.ToString();
-                //await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
+                await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
             }
             else if(targetCounter < 21)
             {
@@ -159,27 +161,6 @@ namespace MauiApp1
             {
                 targetImage.Source = "xldeer.jpg";
             }
-        }
-
-        public string GetScoreDataFolderLocation()
-        {
-
-            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-
-            var directory = new DirectoryInfo(anotherDir ?? Directory.GetCurrentDirectory());
-            var path = string.Empty; 
-
-            while (directory != null && !directory.GetFiles("*.sln").Any())
-            {
-                directory = directory.Parent;
-                var folders = directory.GetDirectories();
-                if(folders.Length == 8)
-                {
-                    var folder = folders[6];
-                    path = folder.FullName; 
-                }
-            }
-            return path;
         }
 
         public async void GetRangeAndDate()

@@ -11,12 +11,15 @@ namespace MauiApp1
     public class ScoreListViewModel : INotifyPropertyChanged
     {
         public List<string> ScoresList { get; set; }
+        public SqlDb db; 
         public ObservableCollection<string> ReviewScoreData { get; set; }
 
         public ScoreListViewModel()
         {
-           ReviewScoreData = new ObservableCollection<string>(); 
-           PopulateScoringDatesDropdownList();            
+
+            db = new SqlDb();
+            ReviewScoreData = new ObservableCollection<string>(); 
+            PopulateScoringDatesDropdownList();            
         }
 
         public event PropertyChangedEventHandler? PropertyChanged
@@ -35,17 +38,23 @@ namespace MauiApp1
         public void PopulateScoringDatesDropdownList()
         {
             var dates = GetRangeDateFromDatabase(); 
-            ScoresList = ["test", "test2"];
-            // foreach (var date in dates)
-            // {
-            //     ScoresList.Add(date);
-            // }
+            //ScoresList = ["test", "test2"];
+            foreach (var date in dates)
+            {
+                ScoresList.Add(date);
+            }
         }
 
         public List<string> GetRangeDateFromDatabase()
         {
             var newList = new List<string>();
-            return newList; 
+            var scores = db.GetAllDates();
+            foreach (var sc in scores)
+            {
+                newList.Add(sc.RangeDate);
+            }
+            var noDupes = newList.Distinct().ToList();
+            return noDupes; 
         }
 
         public void GetScoreDataWithSelectedDate(string date)

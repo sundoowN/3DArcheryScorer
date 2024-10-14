@@ -19,6 +19,7 @@ namespace MauiApp1
 
         public ViewModel()
         {
+            db = new SqlDb(); 
             AddTargetsToList(); 
             PopulateScoresPicker();
             PopulateYardagesPickers();
@@ -44,94 +45,5 @@ namespace MauiApp1
                 ActualYardage.Add(i); 
             }
         }
-
-        public void AddScoreDataToFile(string json)
-        {
-            // db = new SqlDb();
-            //db.AddScoreData(); 
-            var path = GetScoreDataFolderLocation();
-            var dateAndTime = DateTime.Now;
-            var date = dateAndTime.ToString("MM-dd-yy");
-            var newPath = Path.Combine(path, "Course" + date + ".json");
-            if (File.Exists(newPath))
-            {
-
-                    File.AppendAllText(newPath, json);
-            }
-            else
-            {
-                File.WriteAllText(newPath, json);
-            }
-        }
-
-        public string GetScoreDataFolderLocation()
-        {
-            var platform = DeviceInfo.Current;
-            if (platform.Manufacturer.Equals("Apple"))
-            {
-                //var firstDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-
-                //var assembly = typeof(App).GetTypeInfo().Assembly;
-                var locs = FileSystem.Current.AppDataDirectory;
-                var pathsa = new DirectoryInfo(locs);
-                var file = Path.Combine(pathsa.FullName, "mytext.txt");
-                //var application = pathsa.Parent;
-                //var scorePath = application.Name + @"\ScoreData";  
-                //var scoredatafolder = Directory.CreateDirectory(scorePath); 
-
-                while (pathsa != null)
-                {
-                    pathsa = pathsa.Parent;
-                    if (pathsa.ToString().Equals(@"/var/mobile/Containers/Data/Application"))
-                    {
-                        var scorePath = pathsa.ToString() + @"/ScoreData";
-                        var scoredatafolder = Directory.CreateDirectory(scorePath);
-                    }
-                    var pathsa2 = Directory.GetDirectories(pathsa.ToString());
-                }
-            } 
-            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            var directory = new DirectoryInfo(anotherDir ?? Directory.GetCurrentDirectory());
-            var path = string.Empty;
-
-            while (directory != null && !directory.GetFiles("*.sln").Any())
-            {
-                directory = directory.Parent;
-                var folders = directory.GetDirectories();
-                if (folders.Length == 9)
-                {
-                    var fold = folders.Where((r) => r.Name.Contains("ScoreData")); 
-                    foreach(var thing in fold)
-                    {
-                        path = thing.ToString(); 
-                    }
-                }
-            }
-            return path;
-        }
-
-        public string GetImagesFolderLocation()
-        {
-            var anotherDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            var mainDir = FileSystem.Current.AppDataDirectory;
-            //var dir = new DirectoryInfo(mainDir);// ?? Directory.GetCurrentDirectory());
-            var directory = new DirectoryInfo(anotherDir ?? Directory.GetCurrentDirectory()); //this is the problem child
-            var path = string.Empty;
-
-            while (directory != null && !directory.GetFiles("*.sln").Any())
-            {
-                directory = directory.Parent;
-                var folders = directory.GetDirectories();
-                if (folders.Length > 1)
-                {
-                    if (folders.Length == 9)
-                    {
-                        path = folders[8].ToString();
-                    }
-                }
-            }
-            return path;
-        }
-
     }
 }

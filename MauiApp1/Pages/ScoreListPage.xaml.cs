@@ -14,7 +14,6 @@ namespace MauiApp1.Pages
             viewmodel = new ScoreListViewModel();
         }
 
-
         private void PopulateScoreHistoryData(object sender, EventArgs e)
         {
             var date = ScoreHistoryList.SelectedItem.ToString(); 

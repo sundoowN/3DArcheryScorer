@@ -2,12 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Pages.ArrowSetupsPage"
-             Title="ArrowSetupsPage"
-             BackgroundColor="Green">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="ArrowSetupsPage">
+        <ScrollView>
+        <StackLayout Padding="20">
+
+            <Label Text="Enter Your Arrow Setup" FontSize="Medium" />
+
+            <Label Text="Company:" />
+            <Entry x:Name="CompanyEntry" Placeholder="Gold Tip, Easton, Black Eagle" />
+
+            <Label Text="Model:" />
+            <Entry x:Name="ModelEntry" Placeholder="X cutter, Series 22, PS23" />
+
+            <Label Text="Arrow Length:" />
+            <Entry x:Name="ArrowLengthEntry" Placeholder="Length" />
+
+            <Label Text="Point Weight:" />
+            <Entry x:Name="PointWeightEntry" Placeholder="Point" />
+
+            <Label Text="Fletching:" />
+            <Entry x:Name="FletchingEntry" Placeholder="Fletching" />
+
+            <Label Text="Nocks:" />
+            <Entry x:Name="NockEntry" Placeholder="Nock configuration" />
+
+            <Label Text="Other:" />
+            <Entry x:Name="OtherEntry" Placeholder="Anything else not listed" />
+
+            <Button Text="Save Setup"
+                    Margin="0,20,0,0"/>
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
