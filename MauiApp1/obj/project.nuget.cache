@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jcQ/JvwV0RY=",
+  "dgSpecHash": "szSStjxO2P0=",
   "success": true,
   "projectFilePath": "/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/MauiApp1.csproj",
   "expectedPackageFiles": [
@@ -31,9 +31,7 @@
     "/Users/codywhitaker/.nuget/packages/sqlitepclraw.core/2.1.8/sqlitepclraw.core.2.1.8.nupkg.sha512",
     "/Users/codywhitaker/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.8/sqlitepclraw.lib.e_sqlite3.2.1.8.nupkg.sha512",
     "/Users/codywhitaker/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.8/sqlitepclraw.provider.e_sqlite3.2.1.8.nupkg.sha512",
-    "/Users/codywhitaker/.nuget/packages/sqlitepclraw.provider.sqlite3/2.1.8/sqlitepclraw.provider.sqlite3.2.1.8.nupkg.sha512",
-    "/Users/codywhitaker/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
-    "/Users/codywhitaker/.nuget/packages/system.runtime.interopservices.nfloat.internal/6.0.1/system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512"
+    "/Users/codywhitaker/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

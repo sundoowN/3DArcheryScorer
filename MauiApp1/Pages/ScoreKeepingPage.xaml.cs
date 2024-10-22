@@ -7,8 +7,7 @@ using System.Net.Http.Json;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
-namespace MauiApp1
-{
+namespace MauiApp1;
     public partial class ScoreKeepingPage : ContentPage
     {
         public MauiProgram maui;
@@ -172,5 +171,3 @@ namespace MauiApp1
             RangeDate = result; 
         }
     }
-
-}

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MauiApp1
 {
-    public class ScoreListViewModel : INotifyPropertyChanged
+    public class ScoreListViewModel 
     {
         public List<string> ScoresList { get; set; }
         public SqlDb db; 
@@ -22,27 +22,22 @@ namespace MauiApp1
             PopulateScoringDatesDropdownList();            
         }
 
-        public event PropertyChangedEventHandler? PropertyChanged
-        {
-            add
-            {
-                ((INotifyPropertyChanged)ReviewScoreData).PropertyChanged += value;
-            }
-
-            remove
-            {
-                ((INotifyPropertyChanged)ReviewScoreData).PropertyChanged -= value;
-            }
-        }
-
         public void PopulateScoringDatesDropdownList()
         {
             var dates = GetRangeDateFromDatabase(); 
-            //ScoresList = ["test", "test2"];
-            foreach (var date in dates)
+            ScoresList = new List<string>(); 
+            try
             {
-                ScoresList.Add(date);
+                foreach (var date in dates)
+                {
+                    ScoresList.Add(date);
+                }
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex); 
+            }
+
         }
 
         public List<string> GetRangeDateFromDatabase()
