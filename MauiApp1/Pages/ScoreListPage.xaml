@@ -19,11 +19,34 @@
             Text="Review Score"
             Clicked="PopulateScoreHistoryData">
         </Button>
-        <ListView ItemsSource="{Binding ReviewScoreData}"
-                        x:Name="ScoreDatalv"/>
         <Button
             Text="Remove Score"
             Clicked="RemoveScoreFromList">
         </Button>
+        <StackLayout Padding="20">
+        <Label Text="Score Table" FontSize="24" HorizontalOptions="Center" />
+
+            <CollectionView x:Name= "ClctView" ItemsSource="{Binding ReviewScoreData, Mode=OneWay}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Target}" Grid.Column="0" />
+                            <Label Text="{Binding JudgedDistance}" Grid.Column="1" />
+                            <Label Text="{Binding ActualDistance}" Grid.Column="2" />
+                            <Label Text="{Binding ScoringRing}" Grid.Column="3" />
+                            <Label Text="{Binding Notes}" Grid.Column="4" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

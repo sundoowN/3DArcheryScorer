@@ -23,10 +23,7 @@ namespace MauiApp1;
             maui = new MauiProgram();
             model = new ViewModel();
             db = new SqlDb(); 
-            if (RangeDate == null)
-            {
-                GetRangeAndDate(); 
-            }
+            GetRangeAndDate(); 
         }
 
         private void OnSelectedIndexChanged(object sender, EventArgs e)
@@ -164,10 +161,18 @@ namespace MauiApp1;
 
         public async void GetRangeAndDate()
         {
-            var result = await DisplayPromptAsync("Range", "Where are you shooting today?");
-            var date = DateTime.Now;
-            var dates = date.ToString("MM/dd/yyyy"); 
-            result = result + " " + dates; 
-            RangeDate = result; 
+            bool answer = await DisplayAlert("Round Options", "Is this a new round or would you like to pick up where you left off?", "New Round", "Continue");
+            if(answer == true)
+            {
+                var result = await DisplayPromptAsync("Range", "Where are you shooting today?");
+                var date = DateTime.Now;
+                var dates = date.ToString("MM/dd/yyyy"); 
+                result = result + " " + dates; 
+                RangeDate = result; 
+            }
+            else
+            {
+                //call a method to pull the last shooting round? I guess and the last target you were on 
+            }
         }
     }

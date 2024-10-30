@@ -12,6 +12,7 @@ namespace MauiApp1.Pages
         {
             InitializeComponent();
             viewmodel = new ScoreListViewModel();
+            BindingContext = viewmodel; 
         }
 
         private void PopulateScoreHistoryData(object sender, EventArgs e)
@@ -25,6 +26,5 @@ namespace MauiApp1.Pages
             var score = ScoreHistoryList.SelectedItem.ToString();
             viewmodel.RemoveDateFromList(score); 
         }
-
     }
 }

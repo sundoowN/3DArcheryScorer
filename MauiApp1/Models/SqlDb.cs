@@ -65,15 +65,11 @@ namespace MauiApp1
             return datesL; 
         }
 
-        public IEnumerable<ScoringData> GetScoringDataFromDate(string date)
+        public List<ScoringData> GetScoringDataFromDate(string date)
         {
             Init();
-            var listthing = new List<ScoringData>();
-            var scores = conn.Table<ScoringData>().ToList();//.Where(r => r.RangeDate.Contains(date));
-            var score1 = from u in conn.Table<ScoringData>()
-                       where u.RangeDate == date
-                       select u;
-            return score1; 
+            var scores = conn.Table<ScoringData>().Where(r => r.RangeDate == date).ToList();
+            return scores;
         }
     }
 }
