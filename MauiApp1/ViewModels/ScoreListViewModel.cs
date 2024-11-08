@@ -10,7 +10,7 @@ namespace MauiApp1
 {
     public class ScoreListViewModel 
     {
-        public List<string> ScoresList { get; set; }
+        public ObservableCollection<string> ScoresList { get; set; }
         public SqlDb db; 
         public ObservableCollection<ScoringData> ReviewScoreData { get; set; }
 
@@ -24,7 +24,7 @@ namespace MauiApp1
         public void PopulateScoringDatesDropdownList()
         {
             var dates = GetRangeDateFromDatabase(); 
-            ScoresList = new List<string>(); 
+            ScoresList = new ObservableCollection<string>(); 
             foreach (var date in dates)
             {
                 ScoresList.Add(date);
@@ -45,6 +45,7 @@ namespace MauiApp1
 
         public void GetScoreDataWithSelectedDate(string date)
         {
+            ReviewScoreData.Clear(); 
             var Scores = db.GetScoringDataFromDate(date); 
             foreach(var thinger in Scores)
             {
@@ -54,7 +55,7 @@ namespace MauiApp1
 
         public void RemoveDateFromList(string date)
         {
-            var model = new ScoreListViewModel(); 
+            db.RemoveScoreByDate(date);
         }
     }
 }

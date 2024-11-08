@@ -7,7 +7,10 @@
         <StackLayout Padding="20">
 
             <Label Text="Enter Your Arrow Setup" FontSize="Medium" />
-
+            
+            <Label Text="What do you want to call this arrow?" />
+            <Entry x:Name="NameEntry" Placeholder="3D arrow, Indoor, hunting" />
+            
             <Label Text="Company:" />
             <Entry x:Name="CompanyEntry" Placeholder="Gold Tip, Easton, Black Eagle" />
 
@@ -30,7 +33,58 @@
             <Entry x:Name="OtherEntry" Placeholder="Anything else not listed" />
 
             <Button Text="Save Setup"
-                    Margin="0,20,0,0"/>
+                    Margin="0,20,0,0"
+                    Clicked="SubmitArrow"/>
+            <Label Text="Arrow Setups" FontSize="24" HorizontalOptions="Center" />
+
+            <Picker x:Name="ArrowsList" 
+                HorizontalOptions="Fill" />
+            
+            <Grid Padding="10" ColumnSpacing="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" /> <!-- Set fixed width -->
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />  <!-- Fill remaining space for Notes -->
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Company" FontAttributes="Bold" Grid.Column="0" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Model" FontAttributes="Bold" Grid.Column="1" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Length" FontAttributes="Bold" Grid.Column="2" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Point Weight" FontAttributes="Bold" Grid.Column="3" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Fletch" FontAttributes="Bold" Grid.Column="4" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Nock" FontAttributes="Bold" Grid.Column="5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Other" FontAttributes="Bold" Grid.Column="6" HorizontalOptions="CenterAndExpand"/>
+            </Grid>
+            <!-- CollectionView with Aligned Data -->
+            <CollectionView x:Name="ClctView" ItemsSource="{Binding ArrowsList, Mode=OneWay}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10" ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="120" /> <!-- Set fixed width -->
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="120" />
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="*" />  <!-- Fill remaining space for Notes -->
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Company}" Grid.Column="0" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Model}" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Length}" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Point Weight}" Grid.Column="3" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Fletch}" Grid.Column="4" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Nock}" Grid.Column="5" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding Other}" Grid.Column="6" HorizontalTextAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
         </StackLayout>
     </ScrollView>

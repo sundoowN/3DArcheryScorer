@@ -49,6 +49,9 @@ namespace MauiApp1;
             await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
             targetCounter++;
             targetLabel.Text = "Target #" + targetCounter.ToString(); 
+            // JudgedYardages.SelectedIndex = -1; //clears the judged yardages box
+            // ActualYardages.SelectedIndex = -1; //clears the actual yardages box
+            // targetPicker.SelectedIndex = -1; ;
         }
 
         public void SetTargetImage()

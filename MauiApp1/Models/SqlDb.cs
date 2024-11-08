@@ -45,7 +45,6 @@ namespace MauiApp1
         public async Task AddScoreData(string target, int jd, int ad, int score, string notes, string rangeDate)
         {
             Init();
-
             var data = new ScoringData
             {
                 Target = target,
@@ -65,11 +64,39 @@ namespace MauiApp1
             return datesL; 
         }
 
+        public TableQuery<ScoringData> GetTotalScore(string date)
+        {
+            Init(); 
+            var scores = conn.Table<ScoringData>().Where(r => r.RangeDate == date);
+            return scores; 
+        }
+
         public List<ScoringData> GetScoringDataFromDate(string date)
         {
             Init();
             var scores = conn.Table<ScoringData>().Where(r => r.RangeDate == date).ToList();
             return scores;
         }
+
+        public void RemoveScoreByDate(string rangeDate)
+        {
+            var scoresToRemove = conn.Table<ScoringData>().Where(r => r.RangeDate == rangeDate).ToList();
+            foreach (var score in scoresToRemove)
+            {
+                conn.Delete(score);
+            }
+        }
+
+        public int GetTotalScoreByDate(string rangeDate)
+        {
+            var scores = conn.Table<ScoringData>()
+                            .Where(r => r.RangeDate == rangeDate)
+                            .Select(r => r.ScoringRing)
+                            .ToList();
+
+            return scores.Sum();
+        }
+
+
     }
 }
