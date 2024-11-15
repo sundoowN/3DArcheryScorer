@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Pages.ArrowSetupsPage"
              Title="ArrowSetupsPage">
-        <ScrollView>
+
         <StackLayout Padding="20">
 
             <Label Text="Enter Your Arrow Setup" FontSize="Medium" />
             
             <Label Text="What do you want to call this arrow?" />
             <Entry x:Name="NameEntry" Placeholder="3D arrow, Indoor, hunting" />
-            
+
             <Label Text="Company:" />
             <Entry x:Name="CompanyEntry" Placeholder="Gold Tip, Easton, Black Eagle" />
 
@@ -37,7 +37,8 @@
                     Clicked="SubmitArrow"/>
             <Label Text="Arrow Setups" FontSize="24" HorizontalOptions="Center" />
 
-            <Picker x:Name="ArrowsList" 
+            <Picker x:Name="ArrowsList" ItemsSource="{Binding ArrowsList, Mode=OneWay}"
+                SelectedIndexChanged="SelectedArrow"
                 HorizontalOptions="Fill" />
             
             <Grid Padding="10" ColumnSpacing="20">
@@ -60,7 +61,7 @@
                 <Label Text="Other" FontAttributes="Bold" Grid.Column="6" HorizontalOptions="CenterAndExpand"/>
             </Grid>
             <!-- CollectionView with Aligned Data -->
-            <CollectionView x:Name="ClctView" ItemsSource="{Binding ArrowsList, Mode=OneWay}">
+            <CollectionView x:Name="ClctView" ItemsSource="{Binding SelectedArrowData, Mode=OneWay}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="10" ColumnSpacing="20">
@@ -85,7 +86,5 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
         </StackLayout>
-    </ScrollView>
 </ContentPage>

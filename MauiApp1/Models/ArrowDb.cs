@@ -12,6 +12,7 @@ namespace MauiApp1
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }         
+        public string Name { get; set; }
         public string Company {get; set;}
         public string Model {get; set;}
         public int Length {get; set;}
@@ -37,11 +38,12 @@ namespace MauiApp1
             conn.CreateTable<Arrow>();
         }
 
-        public void AddArrowData(string company, string model, int length, int point, string fletch, string nock, string other)
+        public void AddArrowData(string name, string company, string model, int length, int point, string fletch, string nock, string other)
         {
             Init();
             var data = new Arrow
             {
+                Name = name,
                 Company = company,
                 Model = model,
                 Length = length,
@@ -53,10 +55,23 @@ namespace MauiApp1
             conn.Insert(data);
         }
 
-        public List<Arrow> GetAllArrows()
+        public List<string> GetAllArrows()
         {
             Init();
-            return conn.Table<Arrow>().ToList();
+            return conn.Table<Arrow>().Select(a => a.Name).ToList();
         }
+
+        public List<string> GetAllArrowNames()
+        {
+            Init();
+            return conn.Table<Arrow>().Select(a => a.Name).ToList();
+        }
+
+        public List<Arrow> GetArrowData(string arrow)
+        {
+            Init(); 
+            return conn.Table<Arrow>().Where(r => r.Name == arrow).ToList();
+        }
+
     }
 }

@@ -7,9 +7,9 @@ public partial class ArrowSetupsPage : ContentPage
 	public ArrowSetupsPage()
 	{
 		InitializeComponent();
-		avm = new ArrowViewModel(); 
-		//avm.PopulateArrowsDropdownList(); 
 		db = new ArrowDb(); 
+		avm = new ArrowViewModel(); 
+		BindingContext = avm; 
 	}
 
 	private async void SubmitArrow(object sender, EventArgs e)
@@ -22,6 +22,17 @@ public partial class ArrowSetupsPage : ContentPage
 		var fletch = FletchingEntry.Text; 
 		var nock = NockEntry.Text; 
 		var other = OtherEntry.Text; 
-		db.AddArrowData(company, model, len, point, fletch, nock, other); 
+		db.AddArrowData(name, company, model, len, point, fletch, nock, other); 
+		avm.PopulateArrowsDropdownList(); 
 	}
+
+	private void SelectedArrow (object sender, EventArgs e)
+	{
+		var picker = sender as Picker;
+		string selectedItem = ArrowsList.SelectedItem.ToString();
+		avm.PopulateArrowDataTable(selectedItem);
+		//populate the list here
+	}
+
+	//probably want to add in a remove arrow button
 }
