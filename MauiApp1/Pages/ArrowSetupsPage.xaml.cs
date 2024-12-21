@@ -31,7 +31,6 @@ public partial class ArrowSetupsPage : ContentPage
 		var picker = sender as Picker;
 		string selectedItem = ArrowsList.SelectedItem.ToString();
 		avm.PopulateArrowDataTable(selectedItem);
-		//populate the list here
 	}
 
 	//probably want to add in a remove arrow button

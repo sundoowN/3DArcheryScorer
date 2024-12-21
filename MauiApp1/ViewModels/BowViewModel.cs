@@ -10,52 +10,49 @@ namespace MauiApp1
 {
     public class BowViewModel 
     {
-        public ObservableCollection<string> ScoresList { get; set; }
-        public SqlDb db; 
-        public ObservableCollection<ScoringData> ReviewScoreData { get; set; }
+        public ObservableCollection<string> BowsList { get; set; }
+        public ObservableCollection<Bow> SelectedBowData {get; set;}
+        public BowDb db; 
 
         public BowViewModel()
         {
-            db = new SqlDb();
-            PopulateScoringDatesDropdownList();    
-            ReviewScoreData = new ObservableCollection<ScoringData>();  
+            db = new BowDb();
+            BowsList = new ObservableCollection<string>();  
+            SelectedBowData = new ObservableCollection<Bow>(); 
+            PopulateBowsDropdownList();    
         }
 
-        public void PopulateScoringDatesDropdownList()
+        public void PopulateBowsDropdownList()
         {
-            var dates = GetRangeDateFromDatabase(); 
-            ScoresList = new ObservableCollection<string>(); 
-            foreach (var date in dates)
+            BowsList.Clear();
+            var bows = GetBowsFromDatabase(); 
+            foreach (var bow in bows)
             {
-                ScoresList.Add(date);
+                BowsList.Add(bow);
             }
         }
 
-        public List<string> GetRangeDateFromDatabase()
+        public List<string> GetBowsFromDatabase()
         {
             var newList = new List<string>();
-            var scores = db.GetAllDates();
-            foreach (var sc in scores)
+            var bows = db.GetAllBows();
+            foreach (var a in bows)
             {
-                newList.Add(sc.RangeDate);
+                newList.Add(a);
             }
             var noDupes = newList.Distinct().ToList();
             return noDupes; 
         }
 
-        public void GetScoreDataWithSelectedDate(string date)
+        public void PopulateBowDataTable(string bow)
         {
-            ReviewScoreData.Clear(); 
-            var Scores = db.GetScoringDataFromDate(date); 
-            foreach(var thinger in Scores)
+            SelectedBowData.Clear(); 
+            var bowData = db.GetBowData(bow);
+            foreach(var thinger in bowData)
             {
-                ReviewScoreData.Add(thinger); 
+                SelectedBowData.Add(thinger);
             }
         }
 
-        public void RemoveDateFromList(string date)
-        {
-            db.RemoveScoreByDate(date);
-        }
     }
 }

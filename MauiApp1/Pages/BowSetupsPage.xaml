@@ -3,27 +3,105 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Pages.BowSetupsPage"
              Title="BowSetupsPage">
-        <ScrollView>
+    <ScrollView>
         <StackLayout Padding="20">
 
             <Label Text="Enter Your Bow Setup" FontSize="Medium" />
+            
+            <Label Text="What do you want to call this bow?" />
+            <Entry x:Name="NameEntry" Placeholder="3D, Indoor, hunting" />
 
-            <Label Text="Bow:" />
-            <Entry x:Name="BowEntry" Placeholder="Enter Bow" />
+            <Label Text="Company:" />
+            <Entry x:Name="CompanyEntry" Placeholder="Mathews, Hoyt, Elite" />
 
-            <Label Text="Sights:" />
-            <Entry x:Name="SightsEntry" Placeholder="Enter Sights" />
+            <Label Text="Model:" />
+            <Entry x:Name="ModelEntry" Placeholder="TRX, Stratos, Verdict" />
 
-            <Label Text="Stabilizers:" />
-            <Entry x:Name="StabilizersEntry" Placeholder="Enter Stabilizers" />
+            <Label Text="Draw length/poundage:" />
+            <Entry x:Name="DLPEntry" Placeholder="Length/Poundage" />
+
+            <Label Text="Strings:" />
+            <Entry x:Name="StringsEntry" Placeholder="GAS, Threadz, Winners Choice" />
+
+            <Label Text="Sight bar:" />
+            <Entry x:Name="SightEntry" Placeholder="Axcel, CBE, B3" />
+
+            <Label Text="Sight notes:" />
+            <Entry x:Name="SightNotesEntry" Placeholder="Lens, Scope, scale number, etc" />
+
+            <Label Text="Bars" />
+            <Entry x:Name="BarsEntry" Placeholder="B stinger, Shrewd, Conquest" />
+
+            <Label Text="Bars notes:" />
+            <Entry x:Name="BarsNotesEntry" Placeholder="Lengths, angle, weights" />
 
             <Label Text="Release:" />
-            <Entry x:Name="ReleaseEntry" Placeholder="Enter Release" />
+            <Entry x:Name="ReleaseEntry" Placeholder="Truball, Stan, Scott" />
+
+            <Label Text="Rest:" />
+            <Entry x:Name="RestEntry" Placeholder="Trophy Taker, AAE, QAD" />
 
             <Button Text="Save Setup"
-                    Margin="0,20,0,0"/>
+                    Margin="0,20,0,0"
+                    Clicked="CreateBow"/>
 
+            <Label Text="Bow Setups" FontSize="24" HorizontalOptions="Center" />
+
+            <Picker x:Name="BowsList" ItemsSource="{Binding BowsList, Mode=OneWay}"
+                SelectedIndexChanged="SelectedBow"
+                HorizontalOptions="Fill" />
+            
+            <!-- New Grid Layout -->
+            <CollectionView x:Name="ClctView" ItemsSource="{Binding SelectedBowData, Mode=OneWay}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" RowSpacing="10" ColumnSpacing="20">
+                        <!-- Define Two Columns: One for Headers, One for Data -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/> <!-- Header column -->
+                            <ColumnDefinition Width="*"/>   <!-- Data column -->
+                        </Grid.ColumnDefinitions>
+                        <!-- Define Rows for Each Data Point -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Headers -->
+                        <Label Text="Company:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Model:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Draw Length/Weight:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Strings:" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Sight:" Grid.Row="4" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Sight Notes:" Grid.Row="5" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Bars:" Grid.Row="6" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Bars Notes:" Grid.Row="7" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Release:" Grid.Row="8" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        <Label Text="Rest:" Grid.Row="9" Grid.Column="0" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+
+                        <!-- Data -->
+                        <Label Text="{Binding Company}" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Model}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding DrawLength/Weight}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Strings}" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Sight}" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding SightNotes}" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Bars}" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding BarsNotes}" Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Release}" Grid.Row="8" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                        <Label Text="{Binding Rest}" Grid.Row="9" Grid.Column="1" HorizontalTextAlignment="Start"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
         </StackLayout>
     </ScrollView>
 </ContentPage>
-
