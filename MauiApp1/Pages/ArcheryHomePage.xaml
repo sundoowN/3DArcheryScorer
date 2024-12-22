@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.Pages.ArcheryHomePage">
+             x:Class="MauiApp1.Pages.ArcheryHomePage"
+             BackgroundColor="#f5f5f5">
+
     <VerticalStackLayout
-        Padding="10"
-        Spacing="10">
-        <Button Text="Scorecard Keeper"
-                Clicked="OpenScoringApplication"></Button>
-        <Button
-            Text="Review Scores"
-            Clicked="ReviewScores">
-        </Button>
-        <Button
-            Text="Bow Setups"
-            Clicked="BowSetups">            
-        </Button>
-        <Button
-            Text="Arrow Setups"
-            Clicked="ArrowSetups">
-        </Button>
+        Padding="20"
+        Spacing="20">
+        
+        <!-- Header Section -->
+        <Label Text="3D Archery Tracker"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#2E7D32" />
+        <Label Text="Track and Improve Your Archery Performance"
+               FontSize="14"
+               HorizontalOptions="Center"
+               TextColor="#757575" />
+        
+        <!-- Button Section -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Scorecard Keeper"
+                    Clicked="OpenScoringApplication"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
+
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Review Scores"
+                    Clicked="ReviewScores"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
+
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Bow Setups"
+                    Clicked="BowSetups"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
+
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Arrow Setups"
+                    Clicked="ArrowSetups"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

@@ -3,62 +3,102 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MauiApp1"
              x:Class="MauiApp1.ScoreKeepingPage">
-    
-<ContentPage.BindingContext>
-    <local:ViewModel/>
-</ContentPage.BindingContext>
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0">
-            <Image
-                Source="asa.jpeg"
-                HeightRequest="185"
-                Aspect="AspectFit"/>
-            <StackLayout>
-                <Label x:Name="targetLabel"></Label>
-                <Picker x:Name="targetPicker"
-                    IsEnabled="True"
-                    ItemsSource="{Binding TargetsList}"
-                    SelectedItem="{Binding SelectedTarget}"
-                    SelectedIndexChanged="OnSelectedIndexChanged"/>
-            </StackLayout>
+        <VerticalStackLayout Padding="20">
+            <!-- Page Header -->
+            <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Image Source="asa.jpeg" HeightRequest="185" Aspect="AspectFit" />
+                <Label x:Name="targetLabel"
+                    Text="Score Keeper" 
+                    FontSize="28" 
+                    FontAttributes="Bold" 
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
 
-            <Image
-                Source="{Binding }"
-                x:Name="targetImage"
-                HeightRequest="185"
-                Aspect="AspectFit"/>
+            <!-- Target Picker -->
+            <Frame Padding="15" Margin="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Select Target" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#333" />
+                    <Picker x:Name="targetPicker" 
+                            ItemsSource="{Binding TargetsList}" 
+                            SelectedItem="{Binding SelectedTarget}" 
+                            SelectedIndexChanged="OnSelectedIndexChanged" />
+                </VerticalStackLayout>
+            </Frame>
 
-            <StackLayout>
-                <Label>Judged Yardage:</Label>
-                <Picker
-                    x:Name="JudgedYardages"
-                    ItemsSource="{Binding JudgedYardage}"/>
-            </StackLayout>
-    
-            <StackLayout>
-                <Label>Actual Yardage:</Label>
-                <Picker x:Name="ActualYardages"
-                        ItemsSource="{Binding ActualYardage}"/>
-            </StackLayout>
+            <!-- Target Image -->
+            <Image Source="{Binding }" 
+                   x:Name="targetImage" 
+                   HeightRequest="185" 
+                   Aspect="AspectFit" 
+                   Margin="0,10,0,10" />
 
-            <Label>Score:</Label>
-            <Picker
-                x:Name="ScorePicker"
-                ItemsSource="{Binding Scores}"/>
-            <StackLayout>
-                <Label Text="Notes:"/>
-                <Entry x:Name="Notestb"></Entry>
-            </StackLayout>
-            <Button
-                x:Name="SubmitScoreBtn"
-                Text="Submit Score" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="SubmitUserScore"
-                HorizontalOptions="Fill" />
+            <!-- Judged Yardage Picker -->
+            <Frame Padding="15" Margin="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Judged Yardage" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#333" />
+                    <Picker x:Name="JudgedYardages" 
+                            ItemsSource="{Binding JudgedYardage}" />
+                </VerticalStackLayout>
+            </Frame>
 
+            <!-- Actual Yardage Picker -->
+            <Frame Padding="15" Margin="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Actual Yardage" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#333" />
+                    <Picker x:Name="ActualYardages" 
+                            ItemsSource="{Binding ActualYardage}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Score Picker -->
+            <Frame Padding="15" Margin="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Score" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#333" />
+                    <Picker x:Name="ScorePicker" 
+                            ItemsSource="{Binding Scores}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Notes Section -->
+            <Frame Padding="15" Margin="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Notes" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           TextColor="#333" />
+                    <Entry x:Name="Notestb" Placeholder="Add any notes here..." />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Submit Button -->
+            <Button Text="Submit Score" 
+                    x:Name="SubmitScoreBtn" 
+                    Clicked="SubmitUserScore" 
+                    BackgroundColor="#0078d4" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    CornerRadius="10" 
+                    HeightRequest="50" 
+                    HorizontalOptions="Fill" 
+                    Margin="10" />
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
