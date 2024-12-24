@@ -29,14 +29,6 @@
         </Frame>
 
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Review Scores"
-                    Clicked="ReviewScores"
-                    BackgroundColor="#2E7D32"
-                    TextColor="White"
-                    CornerRadius="10" />
-        </Frame>
-
-        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
             <Button Text="Bow Setups"
                     Clicked="BowSetups"
                     BackgroundColor="#2E7D32"
@@ -47,6 +39,15 @@
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
             <Button Text="Arrow Setups"
                     Clicked="ArrowSetups"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
+
+        <!-- New Button for Review Equipment -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Review Equipment"
+                    Clicked="ReviewEquipment"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
                     CornerRadius="10" />

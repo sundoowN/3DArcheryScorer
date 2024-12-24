@@ -26,4 +26,9 @@ public partial class ArcheryHomePage : ContentPage
     {
         await Navigation.PushAsync(new ArrowSetupsPage());
     }
+
+    private async void ReviewEquipment(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ReviewEquipmentPage());
+    }
 }
