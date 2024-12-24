@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		CitTjsxq1mWASnE4xzVj7aOOgmQ=
+		ibP87kNwqvH6rla3b9zot4HrILk=
 		</data>
 		<key>Resources/InitialScore.txt</key>
 		<data>
@@ -104,6 +104,10 @@
 		<data>
 		5CgtFvp0Aw9zC6JtnfflQfQctDw=
 		</data>
+		<key>Resources/logo.png</key>
+		<data>
+		TXkbvfGvdqQEKtbVYdcxaITUg0o=
+		</data>
 		<key>Resources/lyn.jpg</key>
 		<data>
 		GGWhZmo9jDkbvqFlX/MsP3tmkuY=
@@ -151,14 +155,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RwWQ0oz4LfHpEEkVfMkH7/Y3lR9sF/OSEXsBkBlUCA8=
+			pLCelDOeZeOYtvCFcCdzUiEO/FyIfHX05VB8mxS5/tU=
 			</data>
 		</dict>
 		<key>MonoBundle/MauiApp1.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tgRBmqQCf/fGXFy7tPu/WmiH6kX/8SwSYpp+YRpcLGY=
+			jJbRYUZLQWgJhdCfw19Br4P9R+8Jgb11Un37fvQAqFY=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1796,7 +1800,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LG/B/F1/jhcJ1ZwprGqBCrRIAYX30Y8Uzt1aKnNXDBY=
+			Rg/P2jC87qprwdd2QAME7uhJh2JMhIE0VEz3zXf8gFc=
 			</data>
 		</dict>
 		<key>Resources/InitialScore.txt</key>
@@ -1958,6 +1962,13 @@
 			<key>hash2</key>
 			<data>
 			iTH8xp1lVaCp+bIiUmXLlRDYtMEkQWUJEI0luwdwmGY=
+			</data>
+		</dict>
+		<key>Resources/logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XKb3yeamYHlH0ijTwAKtgPFQJV7uooy/bR0UE8HIrXE=
 			</data>
 		</dict>
 		<key>Resources/lyn.jpg</key>
