@@ -1,11 +1,11 @@
-using Microsoft.Data.Sqlite;
-using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.Sqlite;
+using SQLite;
 namespace MauiApp1
 {
     public class ScoringData
@@ -97,6 +97,25 @@ namespace MauiApp1
             return scores.Sum();
         }
 
+        public string GetLastRangeDate()
+        {
+            Init(); 
+            var lrd = conn.Table<ScoringData>()
+                                .OrderByDescending(x => x.RangeDate)
+                                .Select(x => x.RangeDate)
+                                .FirstOrDefault();
 
+            return lrd; 
+        }
+
+        public ScoringData GetRangeDataByDate(string rangeDate)
+        {
+            var rangeData = conn.Table<ScoringData>()
+                            .Where(x => x.RangeDate == rangeDate)
+                            .OrderByDescending(x => x.RangeDate) // Assuming ShootingDate helps in determining the most recent
+                            .FirstOrDefault();
+
+            return rangeData;
+        }
     }
 }

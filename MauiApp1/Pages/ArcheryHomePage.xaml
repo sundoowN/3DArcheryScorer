@@ -21,7 +21,7 @@
         
         <!-- Button Section -->
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Scorecard Keeper"
+            <Button Text="Detailed Scorecard"
                     Clicked="OpenScoringApplication"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
@@ -29,7 +29,15 @@
         </Frame>
 
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Bow Setups"
+            <Button Text="Regular Scorecard"
+                    Clicked="RegularScoreCard"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10" />
+        </Frame>
+
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Create a Bow"
                     Clicked="BowSetups"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
@@ -37,7 +45,7 @@
         </Frame>
 
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Arrow Setups"
+            <Button Text="Create an Arrow"
                     Clicked="ArrowSetups"
                     BackgroundColor="#2E7D32"
                     TextColor="White"

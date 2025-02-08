@@ -46,17 +46,53 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.BowSetupsPa
 build_metadata.AdditionalFiles.TargetPath = Pages/BowSetupsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/BowSetupsPage.xaml
 
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/CreatePages/CreateArrowPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.CreatePages.CreateArrowPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/CreatePages/CreateArrowPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/CreatePages/CreateArrowPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/CreatePages/CreateBowPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.CreatePages.CreateBowPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/CreatePages/CreateBowPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/CreatePages/CreateBowPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/RegularScoreCardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.RegularScoreCardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/RegularScoreCardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/RegularScoreCardPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ReviewEquipmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ReviewEquipmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ReviewEquipmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ReviewEquipmentPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ReviewPages/ReviewArrowsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ReviewPages.ReviewArrowsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ReviewPages/ReviewArrowsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ReviewPages/ReviewArrowsPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ReviewPages/ReviewBowsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ReviewPages.ReviewBowsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ReviewPages/ReviewBowsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ReviewPages/ReviewBowsPage.xaml
+
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ReviewPages/ScoreListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ReviewPages.ScoreListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ReviewPages/ScoreListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ReviewPages/ScoreListPage.xaml
+
 [/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ScoreKeepingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreKeepingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages/ScoreKeepingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/ScoreKeepingPage.xaml
-
-[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ScoreListPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages/ScoreListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages/ScoreListPage.xaml
 
 [/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

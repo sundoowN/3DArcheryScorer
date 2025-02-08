@@ -27,13 +27,6 @@ public partial class BowSetupsPage : ContentPage
 		var rest = RestEntry.Text; 
 		db.AddBowData(name, company, model, dlp, strings, sight, sightnts, bars, barsnts, release, rest);
 	}
-
-	private void SelectedBow (object sender, EventArgs e)
-	{
-		var picker = sender as Picker;
-		string selectedItem = BowsList.SelectedItem.ToString();
-		bvm.PopulateBowDataTable(selectedItem);
-	}
 	
 	//So you will want three total tables: Scores (for review), Arrows, and Bows. This 
 	//would take care of your three objects that you plan on keeping to review. 

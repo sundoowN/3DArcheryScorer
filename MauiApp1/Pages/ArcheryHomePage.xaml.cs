@@ -31,4 +31,9 @@ public partial class ArcheryHomePage : ContentPage
     {
         await Navigation.PushAsync(new ReviewEquipmentPage());
     }
+
+    private async void RegularScoreCard(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RegularScoreCardPage()); 
+    }
 }

@@ -25,13 +25,4 @@ public partial class ArrowSetupsPage : ContentPage
 		db.AddArrowData(name, company, model, len, point, fletch, nock, other); 
 		avm.PopulateArrowsDropdownList(); 
 	}
-
-	private void SelectedArrow (object sender, EventArgs e)
-	{
-		var picker = sender as Picker;
-		string selectedItem = ArrowsList.SelectedItem.ToString();
-		avm.PopulateArrowDataTable(selectedItem);
-	}
-
-	//probably want to add in a remove arrow button
 }

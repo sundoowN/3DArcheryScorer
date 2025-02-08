@@ -1,11 +1,11 @@
-﻿using MauiApp1.Models;
-using MauiApp1.Pages;
-using Microsoft.VisualBasic;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Net.Http.Json;
 using System.Reflection;
 using System.Text.Json.Serialization;
+using MauiApp1.Models;
+using MauiApp1.Pages;
+using Microsoft.VisualBasic;
+using Newtonsoft.Json;
 
 namespace MauiApp1;
     public partial class ScoreKeepingPage : ContentPage
@@ -33,7 +33,7 @@ namespace MauiApp1;
 
         private async void SubmitUserScore(object sender, EventArgs e)
         {
-            if (targetCounter <= 20)
+            if (targetCounter <= 2)
             {
                 var jd = Convert.ToInt32(JudgedYardages.SelectedItem);
                 var ad = Convert.ToInt32(ActualYardages.SelectedItem); 
@@ -41,14 +41,15 @@ namespace MauiApp1;
                 var score = Convert.ToInt32(ScorePicker.SelectedItem);
                 var notes = Notestb.Text.ToString();
                 await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
+                await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
+                targetCounter++;
+                targetLabel.Text = "Target #" + targetCounter.ToString(); 
             }
-            else if(targetCounter < 21)
+            else
             {
                 await DisplayAlert("Alert", "Round is over.", "OK");
+                await Navigation.PushAsync(new ArcheryHomePage());
             }
-            await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
-            targetCounter++;
-            targetLabel.Text = "Target #" + targetCounter.ToString(); 
             // JudgedYardages.SelectedIndex = -1; //clears the judged yardages box
             // ActualYardages.SelectedIndex = -1; //clears the actual yardages box
             // targetPicker.SelectedIndex = -1; ;
@@ -98,7 +99,7 @@ namespace MauiApp1;
             }
             if (targetPicker.SelectedItem.Equals("HillCountry Buck")) //check
             {
-                targetImage.Source = "hcbuck.jpg";
+                targetImage.Source = "hcbuck.jpeg";
             }
             if (targetPicker.SelectedItem.Equals("Howling Wolf"))
             {
@@ -175,7 +176,9 @@ namespace MauiApp1;
             }
             else
             {
-                //call a method to pull the last shooting round? I guess and the last target you were on 
+                RangeDate = db.GetLastRangeDate(); 
+                var data = db.GetRangeDataByDate(RangeDate);  
+
             }
         }
     }

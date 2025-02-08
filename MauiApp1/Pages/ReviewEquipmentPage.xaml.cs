@@ -16,12 +16,12 @@ namespace MauiApp1.Pages
 
         private async void OnReviewBowsClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BowSetupsPage());
+            await Navigation.PushAsync(new ReviewBowsPage());
         }
 
         private async void OnReviewArrowsClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ArrowSetupsPage());
+            await Navigation.PushAsync(new ReviewArrowsPage());
         }
     }
 }

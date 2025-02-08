@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.ReviewBowsPage"
+             Title="Create a Bow"
+             BackgroundColor="#e8f5e9"> <!-- Light green background -->
+    <ScrollView>
+        <VerticalStackLayout Padding="20,30" Spacing="20">
+            <!-- Page Title -->
+            <Label Text="Saved Bow Setups"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#1b5e20" />
+
+            <!-- Picker for Bow Selection -->
+            <Frame BackgroundColor="#a5d6a7"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="True">
+                <Picker x:Name="BowsList"
+                        ItemsSource="{Binding BowsList, Mode=OneWay}"
+                        SelectedIndexChanged="SelectedBow"
+                        TitleColor="#2e7d32"
+                        BackgroundColor="Transparent"
+                        TextColor="#1b5e20"
+                        HorizontalOptions="Fill" />
+            </Frame>
+
+            <!-- CollectionView for Bow Data -->
+            <CollectionView x:Name="ClctView"
+                            ItemsSource="{Binding SelectedBowData, Mode=OneWay}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White"
+                               CornerRadius="15"
+                               Padding="15"
+                               Margin="0,10,0,10"
+                               HasShadow="True"
+                               BorderColor="#81c784"> <!-- Light green border -->
+                            <VerticalStackLayout Spacing="10">
+                                <Label Text="{Binding Company}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#2e7d32" />
+                                <Label Text="{Binding Model}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding DrawLength/Weight}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Strings}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Sight}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding SightNotes}"
+                                       FontSize="14"
+                                       TextColor="#757575" />
+                                <Label Text="{Binding Bars}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding BarsNotes}"
+                                       FontSize="14"
+                                       TextColor="#757575" />
+                                <Label Text="{Binding Release}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Rest}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
