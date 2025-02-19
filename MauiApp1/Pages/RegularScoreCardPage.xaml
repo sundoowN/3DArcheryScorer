@@ -7,10 +7,6 @@
     <ScrollView>
         <VerticalStackLayout Spacing="10" Padding="10">
 
-            <!-- Title -->
-            <Label Text="3D Archery" FontSize="24" FontAttributes="Bold" 
-                   HorizontalOptions="Center"/>
-
             <!-- Target Numbers Row -->
             <Grid ColumnSpacing="5" RowSpacing="5">
                 <Grid.RowDefinitions>
@@ -40,10 +36,6 @@
                     <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Target Numbers -->
-                <Label Grid.Row="0" Grid.ColumnSpan="20" Text="Target Numbers"
-                       FontAttributes="Bold" HorizontalOptions="Center"/>
-
                 <!-- Target Number Boxes -->
                 <Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
                     <Label Text="1" HorizontalOptions="Center"/>
@@ -51,7 +43,81 @@
                 <Frame Grid.Row="1" Grid.Column="1" Padding="5" BackgroundColor="White" BorderColor="Black">
                     <Label Text="2" HorizontalOptions="Center"/>
                 </Frame>
-                <!-- Repeat for targets up to 20 -->
+                <Frame Grid.Row="1" Grid.Column="2" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="3" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="4" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="5" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="6" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="7" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="8" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="9" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="10" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="11" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="12" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="13" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="14" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="15" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="16" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="17" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="18" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="19" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame><Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="1" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="20" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="2" HorizontalOptions="Center"/>
+                </Frame>
             </Grid>
 
             <!-- Score Pickers Row -->
@@ -82,14 +148,28 @@
                     <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Score Label -->
-                <Label Grid.Row="0" Grid.ColumnSpan="20" Text="Score"
-                       FontAttributes="Bold" HorizontalOptions="Center"/>
-
                 <!-- Score Pickers -->
-                <Picker Grid.Row="1" Grid.Column="0" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="0" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}" SelectedIndexChanged="Picker_SelectedIndexChanged"/>
                 <Picker Grid.Row="1" Grid.Column="1" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
-                <!-- Repeat for all 20 targets -->
+                <Picker Grid.Row="1" Grid.Column="2" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="3" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="4" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="5" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="6" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="7" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="8" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="9" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="10" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="11" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="12" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="13" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="14" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="15" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="16" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="17" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="18" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="19" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
+                <Picker Grid.Row="1" Grid.Column="20" WidthRequest="50" ItemsSource="{Binding Scores, Mode=OneWay}"/>
             </Grid>
 
             <!-- Total Tally Row -->
@@ -120,10 +200,6 @@
                     <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Total Tally Label -->
-                <Label Grid.Row="0" Grid.ColumnSpan="20" Text="Total Tally"
-                       FontAttributes="Bold" HorizontalOptions="Center"/>
-
                 <!-- Score Tallies -->
                 <Frame Grid.Row="1" Grid.Column="0" Padding="5" BackgroundColor="White" BorderColor="Black">
                     <Label Text="0" HorizontalOptions="Center"/>
@@ -131,7 +207,63 @@
                 <Frame Grid.Row="1" Grid.Column="1" Padding="5" BackgroundColor="White" BorderColor="Black">
                     <Label Text="0" HorizontalOptions="Center"/>
                 </Frame>
-                <!-- Repeat for all 20 total tallies -->
+                <Frame Grid.Row="1" Grid.Column="2" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="3" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="4" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="5" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="6" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="7" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="8" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="9" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="10" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="11" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="12" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="13" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="14" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="15" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="16" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="17" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="18" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="19" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="20" Padding="5" BackgroundColor="White" BorderColor="Black">
+                    <Label Text="0" HorizontalOptions="Center"/>
+                </Frame>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>

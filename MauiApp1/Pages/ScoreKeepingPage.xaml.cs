@@ -33,7 +33,7 @@ namespace MauiApp1;
 
         private async void SubmitUserScore(object sender, EventArgs e)
         {
-            if (targetCounter <= 2)
+            if (targetCounter <= 20)
             {
                 var jd = Convert.ToInt32(JudgedYardages.SelectedItem);
                 var ad = Convert.ToInt32(ActualYardages.SelectedItem); 
@@ -178,6 +178,8 @@ namespace MauiApp1;
             {
                 RangeDate = db.GetLastRangeDate(); 
                 var data = db.GetRangeDataByDate(RangeDate);  
+                targetLabel.Text = "Target #" + (data.ScoreId + 1); 
+                targetCounter = targetCounter + data.ScoreId; 
 
             }
         }

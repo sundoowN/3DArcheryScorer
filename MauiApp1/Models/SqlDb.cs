@@ -112,7 +112,7 @@ namespace MauiApp1
         {
             var rangeData = conn.Table<ScoringData>()
                             .Where(x => x.RangeDate == rangeDate)
-                            .OrderByDescending(x => x.RangeDate) // Assuming ShootingDate helps in determining the most recent
+                            .OrderByDescending(x => x.ScoreId) // Assuming ShootingDate helps in determining the most recent
                             .FirstOrDefault();
 
             return rangeData;

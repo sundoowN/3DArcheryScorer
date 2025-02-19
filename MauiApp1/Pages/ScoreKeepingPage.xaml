@@ -92,7 +92,7 @@
             <Button Text="Submit Score" 
                     x:Name="SubmitScoreBtn" 
                     Clicked="SubmitUserScore" 
-                    BackgroundColor="#0078d4" 
+                    BackgroundColor="#4CAF50" 
                     TextColor="White" 
                     FontAttributes="Bold" 
                     CornerRadius="10" 

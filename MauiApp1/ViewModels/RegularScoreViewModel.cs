@@ -10,10 +10,11 @@ namespace MauiApp1
 {
     public class RegularScoreViewModel 
     {
-       public ObservableCollection<int> Scores; 
+       public List<string> Scores { get; set; }
+
        public RegularScoreViewModel()
        {
-            Scores = [12, 10, 8, 5, 0];
+            Scores = new List<string> { "12", "10", "8", "5", "0" };
        }
     }
 }
