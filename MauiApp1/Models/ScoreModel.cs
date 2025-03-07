@@ -12,41 +12,40 @@ namespace MauiApp1
     public class ScoreModel : INotifyPropertyChanged
     {
         private int _score;
-        private int _consecutiveScore;
+    private int _runningTotal;
 
-        public int TargetNumber { get; set; }
+    public int TargetNumber { get; set; }
 
-        public int Score
+    public int Score
+    {
+        get => _score;
+        set
         {
-            get => _score;
-            set
+            if (_score != value)
             {
-                if (_score != value)
-                {
-                    _score = value;
-                    OnPropertyChanged(nameof(Score));
-                }
+                _score = value;
+                OnPropertyChanged(nameof(Score));
             }
         }
+    }
 
-        public int ConsecutiveScore
+    public int RunningTotal
+    {
+        get => _runningTotal;
+        set
         {
-            get => _consecutiveScore;
-            set
+            if (_runningTotal != value)
             {
-                if (_consecutiveScore != value)
-                {
-                    _consecutiveScore = value;
-                    OnPropertyChanged(nameof(ConsecutiveScore));
-                }
+                _runningTotal = value;
+                OnPropertyChanged(nameof(RunningTotal));
             }
         }
+    }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected virtual void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
     }
 }

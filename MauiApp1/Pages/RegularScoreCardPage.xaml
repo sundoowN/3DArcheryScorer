@@ -2,34 +2,45 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Pages.RegularScoreCardPage"
+             x:Name="ScoreCardPage"
              BackgroundColor="#f5f5f5"
              Padding="10">
-<CollectionView ItemsSource="{Binding ScoresList}">
-    <CollectionView.ItemTemplate>
-        <DataTemplate>
-            <Grid ColumnSpacing="5" RowSpacing="5">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                </Grid.ColumnDefinitions>
+        <ScrollView Orientation="Horizontal">
+        <VerticalStackLayout Spacing="10" Padding="10">
 
-                <!-- Target Number -->
-                <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" 
-                       Text="{Binding TargetNumber}"/>
+            <!-- CollectionView to Handle Binding -->
+            <CollectionView ItemsSource="{Binding ScoresList}" HorizontalScrollBarVisibility="Always">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
 
-                <!-- Score Picker -->
-                <Picker Grid.Row="0" Grid.Column="1" WidthRequest="50" 
-                        ItemsSource="{Binding Source={x:Reference RegularScoreCardPage}, Path=BindingContext.AvailableScores}"
-                        SelectedItem="{Binding Score, Mode=TwoWay}"
-                        SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
 
-                <!-- Consecutive Score -->
-                <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" 
-                       Text="{Binding ConsecutiveScore}"/>
-            </Grid>
-        </DataTemplate>
-    </CollectionView.ItemTemplate>
-</CollectionView>
+                            <!-- Target Number (Static Display) -->
+                            <Label Text="{Binding TargetNumber}" 
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalOptions="Center"/>
 
+                            <!-- Score Picker (Dropdown) -->
+                            <Picker ItemsSource="{Binding Source={x:Reference ScoreCardPage}, Path=BindingContext.AvailableScores}"
+                                    SelectedItem="{Binding Score, Mode=TwoWay}"
+                                    SelectedIndexChanged="Picker_SelectedIndexChanged"
+                                    WidthRequest="50"/>
+
+                            <!-- Running Total (Read-Only) -->
+                            <Entry Text="{Binding RunningTotal, Mode=OneWay}"
+                                   IsReadOnly="True"
+                                   WidthRequest="50"
+                                   BackgroundColor="LightGray"
+                                   HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -34,6 +34,13 @@ public partial class ArcheryHomePage : ContentPage
 
     private async void RegularScoreCard(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new RegularScoreCardPage()); 
+        try
+        {
+            await Navigation.PushAsync(new RegularScoreCardPage()); 
+        }
+        catch(Exception ex)
+        {
+
+        }
     }
 }
