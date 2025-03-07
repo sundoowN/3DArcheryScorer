@@ -18,6 +18,7 @@ namespace MauiApp1
         public int ScoringRing { get; set; }
         public string Notes { get; set; }
         public string RangeDate { get; set; }
+        
     }
 
     public class SqlDb
