@@ -9,14 +9,16 @@ using Microsoft.Data.Sqlite;
 using SQLite;
 namespace MauiApp1
 {
-    public class ScoreModel : INotifyPropertyChanged
-    {
-        private int _score;
-    private int _runningTotal;
+   using System.ComponentModel;
+
+public class ScoreModel : INotifyPropertyChanged
+{
+    private int? _score;
+    private int? _runningTotal;
 
     public int TargetNumber { get; set; }
 
-    public int Score
+    public int? Score  // ✅ Allow null values for unselected targets
     {
         get => _score;
         set
@@ -29,7 +31,7 @@ namespace MauiApp1
         }
     }
 
-    public int RunningTotal
+    public int? RunningTotal  // ✅ Make this nullable
     {
         get => _runningTotal;
         set
@@ -47,5 +49,6 @@ namespace MauiApp1
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
-    }
+}
+
 }

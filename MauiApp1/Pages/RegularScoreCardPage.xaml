@@ -31,7 +31,7 @@
                                     WidthRequest="50"/>
 
                             <!-- Running Total (Read-Only) -->
-                            <Entry Text="{Binding RunningTotal, Mode=OneWay}"
+                            <Entry Text="{Binding RunningTotal, Mode=OneWay, StringFormat='{}{0:##}'}"
                                    IsReadOnly="True"
                                    WidthRequest="50"
                                    BackgroundColor="LightGray"

@@ -19,31 +19,28 @@ namespace MauiApp1.Pages
             BindingContext = model; 
         }
 
-private void Picker_SelectedIndexChanged(object sender, EventArgs e)
-{
-    var picker = (Picker)sender;
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var picker = (Picker)sender;
 
-    if (picker.SelectedItem == null)
-        return;
+            if (picker.SelectedItem == null)
+                return;
 
-    int selectedScore = (int)picker.SelectedItem;
+            int selectedScore = (int)picker.SelectedItem;
 
-    // Get the bound ScoreModel from the Picker
-    var selectedScoreModel = picker.BindingContext as ScoreModel;
+            if (picker.BindingContext is not ScoreModel selectedScoreModel)
+                return;
 
-    if (selectedScoreModel == null)
-        return;
+            var viewModel = (RegularScoreViewModel)BindingContext;
 
-    var viewModel = (RegularScoreViewModel)BindingContext;
-
-    // Find and update the corresponding ScoreModel
-    var targetModel = viewModel.ScoresList.FirstOrDefault(model => model.TargetNumber == selectedScoreModel.TargetNumber);
-
-    if (targetModel != null)
-    {
-        targetModel.Score = selectedScore; // Update selected score
-        viewModel.UpdateRunningTotals(); // Update cumulative score
-    }
-}
+            // Find the corresponding ScoreModel
+            var targetModel = viewModel.ScoresList.FirstOrDefault(m => m.TargetNumber == selectedScoreModel.TargetNumber);
+            
+            if (targetModel != null)
+            {
+                targetModel.Score = selectedScore;
+                viewModel.UpdateRunningTotals();  // ✅ Trigger running total update
+            }
+        }
     }
 }
