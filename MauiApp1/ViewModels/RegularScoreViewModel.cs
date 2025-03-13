@@ -25,7 +25,7 @@ namespace MauiApp1
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-            // Method to update running totals dynamically
+        // Method to update running totals dynamically
         public void UpdateRunningTotals()
         {
             int cumulativeSum = 0;
