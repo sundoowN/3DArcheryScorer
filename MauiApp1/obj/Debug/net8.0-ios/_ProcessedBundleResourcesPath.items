@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/sp/splash_61635F94ABD2A93CED6F5EB7B2159B14425C9BA9C0145073F87E3E623AC94453.png" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/sp/splash_61635F94ABD2A93CED6F5EB7B2159B14425C9BA9C0145073F87E3E623AC94453@2x.png" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/sp/splash_61635F94ABD2A93CED6F5EB7B2159B14425C9BA9C0145073F87E3E623AC94453@3x.png" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/wolverin.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/coyote.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/wildboar.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/hcbuck.jpeg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/turk.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/cbear.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/russianboar.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/blackbear.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/muledeer.jpeg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/afrwarthog.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/meddeer.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/aouda.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/lyn.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/africanimpala.jpeg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/wolf.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/asa.jpeg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/pronghornantelope.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/chamoi.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/ladeer.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/blkpanther.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/javelina.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/grazingdoe.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/leopar.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/howlwolf.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/xldeer.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/hyena.jpg" />
+    <BundleResource Include="/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/resizetizer/r/Resources/blesbo.jpg" />
+    <BundleResource Include="obj/Debug/net8.0-ios/resizetizer/f/OpenSans-Regular.ttf" />
+    <BundleResource Include="obj/Debug/net8.0-ios/resizetizer/f/OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>
