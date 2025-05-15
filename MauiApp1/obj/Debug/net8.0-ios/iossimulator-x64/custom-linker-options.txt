@@ -8,7 +8,7 @@ AreAnyAssembliesTrimmed=false
 				CacheDirectory=/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-ios/iossimulator-x64/linker-cache
 				
 				Debug=true
-				DeploymentTarget=11.0
+				DeploymentTarget=18.0
 				
 				EnableSGenConc=false
 				

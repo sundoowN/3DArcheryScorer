@@ -46,7 +46,7 @@
                            FontSize="16" 
                            FontAttributes="Bold" 
                            TextColor="#333" />
-                    <Picker x:Name="Yardage" 
+                    <Picker x:Name="ActualYardages" 
                             ItemsSource="{Binding ActualYardage}" />
                 </VerticalStackLayout>
             </Frame>

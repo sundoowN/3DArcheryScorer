@@ -4,6 +4,12 @@
     <_LinkerFrameworks Include="Accelerate">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Accessibility">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AccessorySetupKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="Accounts">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -13,7 +19,16 @@
     <_LinkerFrameworks Include="AddressBookUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AdServices">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="AdSupport">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AppClip">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AppTrackingTransparency">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="ARKit">
@@ -22,16 +37,43 @@
     <_LinkerFrameworks Include="AudioToolbox">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AuthenticationServices">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AutomaticAssessmentConfiguration">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="AVFoundation">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="AVKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="AVRouting">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="BackgroundAssets">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="BackgroundTasks">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="BrowserEngineKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="BusinessChat">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CallKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CarPlay">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CFNetwork">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="ClassKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CloudKit">
@@ -58,10 +100,16 @@
     <_LinkerFrameworks Include="CoreGraphics">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreHaptics">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreImage">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreLocation">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreLocationUI">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreMedia">
@@ -88,7 +136,13 @@
     <_LinkerFrameworks Include="CoreVideo">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CryptoTokenKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="DeviceCheck">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="DeviceDiscoveryExtension">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="EventKit">
@@ -133,6 +187,9 @@
     <_LinkerFrameworks Include="IdentityLookup">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="IdentityLookupUI">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="ImageIO">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -143,6 +200,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="JavaScriptCore">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="LinkPresentation">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="LocalAuthentication">
@@ -175,6 +235,12 @@
     <_LinkerFrameworks Include="MetalPerformanceShaders">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="MetalPerformanceShadersGraph">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="MetricKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="MobileCoreServices">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -182,6 +248,15 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="MultipeerConnectivity">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="NaturalLanguage">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="NearbyInteraction">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Network">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="NetworkExtension">
@@ -193,10 +268,16 @@
     <_LinkerFrameworks Include="OpenGLES">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="OSLog">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="PassKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="PDFKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="PencilKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Photos">
@@ -208,10 +289,16 @@
     <_LinkerFrameworks Include="PushKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="PushToTalk">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="QuartzCore">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="QuickLook">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="QuickLookThumbnailing">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="ReplayKit">
@@ -220,13 +307,31 @@
     <_LinkerFrameworks Include="SafariServices">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="SafetyKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="SceneKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="ScreenTime">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Security">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="SensitiveContentAnalysis">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="SharedWithYou">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="SharedWithYouCore">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="Social">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="SoundAnalysis">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="Speech">
@@ -238,6 +343,9 @@
     <_LinkerFrameworks Include="StoreKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Symbols">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="SystemConfiguration">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -245,6 +353,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="UIKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UniformTypeIdentifiers">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="UserNotifications">
@@ -262,127 +373,16 @@
     <_LinkerFrameworks Include="Vision">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="VisionKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="WatchConnectivity">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="WebKit">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
-    <_LinkerFrameworks Include="Accessibility">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AccessorySetupKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AdServices">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AppClip">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AppTrackingTransparency">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AuthenticationServices">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AutomaticAssessmentConfiguration">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="AVRouting">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="BackgroundAssets">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="BackgroundTasks">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="BrowserEngineKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="BusinessChat">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="CarPlay">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="ClassKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="CoreHaptics">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="CoreLocationUI">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="CryptoTokenKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="DeviceDiscoveryExtension">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="IdentityLookupUI">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="LinkPresentation">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="MetalPerformanceShadersGraph">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="MetricKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="NaturalLanguage">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="NearbyInteraction">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="Network">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="OSLog">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="PencilKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="PushToTalk">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="QuickLookThumbnailing">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="SafetyKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="ScreenTime">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="SensitiveContentAnalysis">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
     <_LinkerFrameworks Include="SensorKit">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="SharedWithYou">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="SharedWithYouCore">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="SoundAnalysis">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="Symbols">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="UniformTypeIdentifiers">
-      <IsWeak>true</IsWeak>
-    </_LinkerFrameworks>
-    <_LinkerFrameworks Include="VisionKit">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="GSS">

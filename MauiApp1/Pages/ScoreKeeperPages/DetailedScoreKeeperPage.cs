@@ -16,7 +16,7 @@ namespace MauiApp1.Pages
 
         private async void OpenUnknownScorecard(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ScoreKeepingPage());
+            await Navigation.PushAsync(new UnknownScoreKeepingPage());
         }
     }
 }

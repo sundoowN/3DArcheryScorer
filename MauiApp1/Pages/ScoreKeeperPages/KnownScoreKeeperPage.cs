@@ -33,25 +33,25 @@ namespace MauiApp1;
 
         private async void SubmitUserScore(object sender, EventArgs e)
         {
-            // if (targetCounter <= 20)
-            // {
-            //     var ad = Convert.ToInt32(ActualYardages.SelectedItem); 
-            //     var st = targetPicker.SelectedItem.ToString();
-            //     var score = Convert.ToInt32(ScorePicker.SelectedItem);
-            //     var notes = Notestb.Text.ToString();
-            //     await db.AddScoreData(st, jd, ad, score, notes, RangeDate);
-            //     await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
-            //     targetCounter++;
-            //     targetLabel.Text = "Target #" + targetCounter.ToString(); 
-            // }
-            // else
-            // {
-            //     await DisplayAlert("Alert", "Round is over.", "OK");
-            //     await Navigation.PushAsync(new ArcheryHomePage());
-            // }
-            // JudgedYardages.SelectedIndex = -1; //clears the judged yardages box
-            // ActualYardages.SelectedIndex = -1; //clears the actual yardages box
-            // targetPicker.SelectedIndex = -1; ;
+            if (targetCounter <= 20)
+            {
+                var ad = Convert.ToInt32(ActualYardages.SelectedItem); 
+                var st = targetPicker.SelectedItem.ToString();
+                var score = Convert.ToInt32(ScorePicker.SelectedItem);
+                var notes = Notestb.Text;
+                await db.AddKnownScoreData(st, ad, score, notes, RangeDate, 0);
+                await DisplayAlert($"Target: {targetCounter}", "Target saved", "OK");
+                targetCounter++;
+                targetLabel.Text = "Target #" + targetCounter.ToString(); 
+            }
+            else
+            {
+                await DisplayAlert("Alert", "Round is over.", "OK");
+                await Navigation.PushAsync(new ArcheryHomePage());
+            }
+            ActualYardages.SelectedIndex = -1; //clears the actual yardages box'
+            ScorePicker.SelectedIndex = -1;
+            Notestb.Text = string.Empty;
         }
 
         public void SetTargetImage()
@@ -164,22 +164,41 @@ namespace MauiApp1;
 
         public async void GetRangeAndDate()
         {
-            bool answer = await DisplayAlert("Round Options", "Is this a new round or would you like to pick up where you left off?", "New Round", "Continue");
-            if(answer == true)
+            //Get the user response
+            string action = await DisplayActionSheet(
+                "Round Options",
+                "Go Back", // this appears at the bottom
+                null,
+                "New Round", "Continue");
+            
+            if(action == "New Round")
             {
                 var result = await DisplayPromptAsync("Range", "Where are you shooting today?");
-                var date = DateTime.Now;
-                var dates = date.ToString("MM/dd/yyyy"); 
-                result = result + " " + dates; 
-                RangeDate = result; 
+                if (result == null || result == String.Empty)
+                {
+                    GetRangeAndDate();
+                    
+                }
+                else
+                {
+                    var date = DateTime.Now;
+                    var dates = date.ToString("MM/dd/yyyy"); 
+                    result = result + " " + dates; 
+                    RangeDate = result;
+                }
             }
-            else
+            else if(action == "Continue")
             {
-                RangeDate = db.GetLastRangeDate(); 
-                var data = db.GetRangeDataByDate(RangeDate);  
-                targetLabel.Text = "Target #" + (data.ScoreId + 1); 
-                targetCounter = targetCounter + data.ScoreId; 
+                RangeDate = db.GetLastUnknownRangeDate(); 
+                var data = db.GetUnknownRangeDataByDate(RangeDate);  
+                targetLabel.Text = "Target #" + (data.TargetNumber);
+                targetCounter = data.TargetNumber; 
 
+            }
+            else if (action == "Go Back")
+            {
+                // Go back
+                await Navigation.PopAsync();
             }
         }
     }

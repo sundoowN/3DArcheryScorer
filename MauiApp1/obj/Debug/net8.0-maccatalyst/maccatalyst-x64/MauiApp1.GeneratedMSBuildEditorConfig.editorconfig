@@ -100,11 +100,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreKeeper
 build_metadata.AdditionalFiles.TargetPath = Pages/ScoreKeeperPages/KnownScoreKeeperPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages/ScoreKeeperPages/KnownScoreKeeperPage.xaml
 
-[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ScoreKeeperPages/ScoreKeepingPage.xaml]
+[/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Pages/ScoreKeeperPages/UnknownScoreKeepingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreKeeperPages.ScoreKeepingPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages/ScoreKeeperPages/ScoreKeepingPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages/ScoreKeeperPages/ScoreKeepingPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Pages.ScoreKeeperPages.UnknownScoreKeepingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ScoreKeeperPages/UnknownScoreKeepingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ScoreKeeperPages/UnknownScoreKeepingPage.xaml
 
 [/Users/codywhitaker/Documents/C\#/3DArcheryScorer/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
