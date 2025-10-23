@@ -23,7 +23,6 @@ namespace MauiApp1
     public class SqlDb
     {
         public static SQLiteConnection conn;
-        public SqliteCommand connection;
         public static string databasePath; 
         
         public static async void Init()
@@ -35,6 +34,8 @@ namespace MauiApp1
             databasePath = Path.Combine(FileSystem.AppDataDirectory, "ScoringDatabase.db3");
             conn = new SQLiteConnection(databasePath);
             conn.CreateTable<ScoringData>();
+            conn.CreateTable<RegularScore>();
+
         }
         public async Task<List<ScoringData>> GetAllScores()
         {
@@ -81,12 +82,6 @@ namespace MauiApp1
             return datesL; 
         }
 
-        public TableQuery<ScoringData> GetTotalScore(string date)
-        {
-            Init(); 
-            var scores = conn.Table<ScoringData>().Where(r => r.RangeDate == date);
-            return scores; 
-        }
 
         public List<ScoringData> GetScoringDataFromDate(string date)
         {
@@ -157,5 +152,85 @@ namespace MauiApp1
 
             return rangeData;
         }
+
+        public ScoringData GetLastTargetShot(string rangeDate, int targetnumber)
+        {
+            var result = conn.Table<ScoringData>()
+                .Where(s => s.RangeDate == rangeDate && s.IsUnknown == 1 && s.TargetNumber == targetnumber)
+                .OrderByDescending(s => s.TargetNumber)
+                .FirstOrDefault();
+            return result;
+        }
+        public void DeleteTargetScore(string rangeDate, int targetNumber)
+        {
+            var recordToDelete = conn.Table<ScoringData>()
+                .Where(s => s.RangeDate == rangeDate && s.TargetNumber == targetNumber)
+                .FirstOrDefault();
+
+            if (recordToDelete != null)
+            {
+                conn.Delete(recordToDelete);
+            }
+        }
+        
+        // ===== REGULAR SCORE METHODS =====
+
+        public void AddOrUpdateRegularScore(int targetNumber, int score, string rangeDate)
+        {
+            Init();
+
+            // Check if record exists for that target/date
+            var existing = conn.Table<RegularScore>()
+                .FirstOrDefault(x => x.TargetNumber == targetNumber && x.RangeDate == rangeDate);
+
+            if (existing != null)
+            {
+                existing.Score = score;
+                conn.Update(existing);
+            }
+            else
+            {
+                conn.Insert(new RegularScore
+                {
+                    TargetNumber = targetNumber,
+                    Score = score,
+                    RangeDate = rangeDate
+                });
+            }
+        }
+
+        public List<RegularScore> GetRegularScoresByDate(string date)
+        {
+            Init();
+            return conn.Table<RegularScore>()
+                .Where(x => x.RangeDate == date)
+                .ToList();
+        }
+
+
+        public void DeleteRegularScoresByDate(string rangeDate)
+        {
+            Init();
+            var scores = conn.Table<RegularScore>().Where(x => x.RangeDate == rangeDate).ToList();
+            foreach (var s in scores)
+                conn.Delete(s);
+        }
+
+
+
     }
+    
+    
+    public class RegularScore
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
+        public int TargetNumber { get; set; }
+        public int Score { get; set; }
+
+        // A session ID or timestamp to group one 20-target round
+        public string RangeDate { get; set; }
+    }
+
 }

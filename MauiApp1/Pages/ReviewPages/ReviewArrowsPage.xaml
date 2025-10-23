@@ -4,137 +4,69 @@
              x:Class="MauiApp1.Pages.ReviewArrowsPage"
              Title="Review Arrows"
              BackgroundColor="#e8f5e9"> <!-- Light green background -->
-    <VerticalStackLayout Padding="20,30" Spacing="15">
-        <!-- Page Title -->
-        <Label Text="Review Arrows" 
-               FontSize="32" 
-               FontAttributes="Bold" 
-               TextColor="#1b5e20" 
-               HorizontalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20,30" Spacing="20">
+            <!-- Page Title -->
+            <Label Text="Saved Arrow Setups"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#1b5e20" />
 
-        <!-- Dropdown for Arrow List -->
-        <Frame BackgroundColor="#a5d6a7"
-               CornerRadius="10"
-               Padding="10"
-               HasShadow="True">
-            <Picker x:Name="ArrowsList" ItemsSource="{Binding ArrowsList, Mode=OneWay}"
-                SelectedIndexChanged="SelectedArrow"
-                HorizontalOptions="Fill"/>
-        </Frame>
+            <!-- Picker for Arrow Selection -->
+            <Frame BackgroundColor="#a5d6a7"
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="True">
+                <Picker x:Name="ArrowsList"
+                        ItemsSource="{Binding ArrowsList, Mode=OneWay}"
+                        SelectedIndexChanged="SelectedArrow"
+                        Title="Select an Arrow Setup"
+                        TitleColor="#2e7d32"
+                        BackgroundColor="Transparent"
+                        TextColor="#1b5e20"
+                        HorizontalOptions="Fill" />
+            </Frame>
 
-        <!-- Arrow Data Table -->
-        <Frame BackgroundColor="White"
-               CornerRadius="15"
-               Padding="15"
-               HasShadow="True"
-               BorderColor="#81c784"> <!-- Light green border -->
-            <StackLayout>
-                <Label Text="Arrow Details"
-                       FontSize="24"
-                       FontAttributes="Bold"
-                       TextColor="#2e7d32"
-                       HorizontalOptions="Center" />
-
-                <!-- Column Headers -->
-                <Grid Padding="10" ColumnSpacing="20">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="120" /> <!-- Set fixed width -->
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="80" />
-                        <ColumnDefinition Width="80" />
-                        <ColumnDefinition Width="120" />
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="*" />  <!-- Fill remaining space for Notes -->
-                    </Grid.ColumnDefinitions>
-
-                    <Label Text="Company" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="0" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Model" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="1" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Length" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="2" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Point Weight" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="3" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Fletch" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="4" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Nock" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="5" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Other" 
-                           FontAttributes="Bold" 
-                           TextColor="#1b5e20"
-                           Grid.Column="6" 
-                           HorizontalOptions="Center" />
-                </Grid>
-
-                <!-- Data Display -->
-                <CollectionView x:Name="ClctView" 
-                                ItemsSource="{Binding SelectedArrowData, Mode=OneWay}"
-                                BackgroundColor="#e8f5e9"
-                                Margin="0,10,0,0">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Padding="10" ColumnSpacing="20">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="120" /> <!-- Set fixed width -->
-                                    <ColumnDefinition Width="100" />
-                                    <ColumnDefinition Width="80" />
-                                    <ColumnDefinition Width="80" />
-                                    <ColumnDefinition Width="120" />
-                                    <ColumnDefinition Width="100" />
-                                    <ColumnDefinition Width="*" />  <!-- Fill remaining space for Notes -->
-                                </Grid.ColumnDefinitions>
-
-                                <Label Text="{Binding Company}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="0" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Model}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="1" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Length}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="2" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding PointWeight}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="3" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Fletch}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="4" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Nock}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="5" 
-                                       HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Other}" 
-                                       TextColor="#1b5e20" 
-                                       Grid.Column="6" 
-                                       HorizontalTextAlignment="Center" />
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </StackLayout>
-        </Frame>
-    </VerticalStackLayout>
+            <!-- CollectionView for Arrow Data -->
+            <CollectionView x:Name="ClctView"
+                            ItemsSource="{Binding SelectedArrowData, Mode=OneWay}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="White"
+                               CornerRadius="15"
+                               Padding="15"
+                               Margin="0,10,0,10"
+                               HasShadow="True"
+                               BorderColor="#81c784">
+                            <VerticalStackLayout Spacing="10">
+                                <Label Text="{Binding Company}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#2e7d32" />
+                                <Label Text="{Binding Model}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Length}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding PointWeight}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Fletch}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Nock}"
+                                       FontSize="16"
+                                       TextColor="#424242" />
+                                <Label Text="{Binding Other}"
+                                       FontSize="14"
+                                       TextColor="#757575" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

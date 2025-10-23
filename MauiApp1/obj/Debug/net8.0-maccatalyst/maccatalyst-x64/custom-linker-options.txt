@@ -4,7 +4,7 @@ AreAnyAssembliesTrimmed=false
 				AOTCompiler=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.AOT.osx-x64.Cross.maccatalyst-x64/8.0.8/Sdk/../tools/mono-aot-cross
 				AOTOutputDirectory=obj/Debug/net8.0-maccatalyst/maccatalyst-x64/nativelibraries/aot-output/
 				DedupAssembly=
-				AppBundleManifestPath=bin/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.app/Contents/Info.plist
+				AppBundleManifestPath=bin/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/MauiApp1.app/Contents/Info.plist
 				CacheDirectory=/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/linker-cache
 				
 				Debug=true
@@ -215,7 +215,7 @@ MonoLibrary=/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.mac
 				PartialStaticRegistrarLibrary=/usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Runtime.maccatalyst-x64.net8.0_18.0/18.0.8303/runtimes/maccatalyst-x64/native/Microsoft.MacCatalyst.registrar.a
 				Platform=MacCatalyst
 				PlatformAssembly=Microsoft.MacCatalyst.dll
-				RelativeAppBundlePath=../MauiApp1.app/
+				RelativeAppBundlePath=../device-builds/iphone17.3-18.0/MauiApp1.app/
 				Registrar=
 				
 				RequireLinkWithAttributeForObjectiveCClassSearch=

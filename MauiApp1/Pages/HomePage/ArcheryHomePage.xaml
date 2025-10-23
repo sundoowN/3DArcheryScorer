@@ -37,7 +37,7 @@
         </Frame>
 
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Create a Bow"
+            <Button Text="Build a Bow"
                     Clicked="BowSetups"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
@@ -45,7 +45,7 @@
         </Frame>
 
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Create an Arrow"
+            <Button Text="Build an Arrow"
                     Clicked="ArrowSetups"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
@@ -54,11 +54,20 @@
 
         <!-- New Button for Review Equipment -->
         <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
-            <Button Text="Review Equipment"
+            <Button Text="Review Scores and Equipment"
                     Clicked="ReviewEquipment"
                     BackgroundColor="#2E7D32"
                     TextColor="White"
                     CornerRadius="10" />
         </Frame>
+        
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+            <Button Text="Lancaster Archery"
+                    Clicked="OpenLancaster"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="10"/>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>

@@ -58,6 +58,12 @@
     <Compile Update="Pages\RegularScoreCardPage\RegularScoreCardPage.cs">
       <DependentUpon>RegularScoreCardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\DetailedScoreKeeperPages\DetailedScoreKeeperPage.cs">
+      <DependentUpon>DetailedScoreKeeperPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\DetailedScoreKeeperPages\KnownScoreKeeperPage.cs">
+      <DependentUpon>KnownScoreKeeperPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

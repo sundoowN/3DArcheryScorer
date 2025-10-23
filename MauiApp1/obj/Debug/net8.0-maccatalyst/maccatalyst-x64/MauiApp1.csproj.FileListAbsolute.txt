@@ -310,14 +310,6 @@
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/mauifont.stamp
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/resizetizer/f/OpenSans-Regular.ttf
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/resizetizer/f/OpenSans-Semibold.ttf
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/actool/_PartialAppManifest.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/actool/_BundleResourceWithLogicalName.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/actool/_ProcessedImageAssetsPath.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/coremlc/_PartialAppManifest.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/coremlc/_BundleResourceWithLogicalName.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/_ProcessedBundleResourcesPath.items
-/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/_ProcessedContentPath.items
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.csproj.AssemblyReference.cache
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.GeneratedMSBuildEditorConfig.editorconfig
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.AssemblyInfoInputs.cache
@@ -331,3 +323,12 @@
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.pdb
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/MauiApp1.genruntimeconfig.cache
 /Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/ref/MauiApp1.dll
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/las.png
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/actool/_PartialAppManifest.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/actool/_BundleResourceWithLogicalName.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/actool/_ProcessedImageAssetsPath.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/coremlc/_PartialAppManifest.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/coremlc/_BundleResourceWithLogicalName.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/_ProcessedBundleResourcesPath.items
+/Users/codywhitaker/Documents/C#/3DArcheryScorer/MauiApp1/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/device-builds/iphone17.3-18.0/_ProcessedContentPath.items

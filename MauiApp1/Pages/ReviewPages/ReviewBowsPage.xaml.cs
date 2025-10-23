@@ -17,8 +17,4 @@ public partial class ReviewBowsPage : ContentPage
 		string selectedItem = BowsList.SelectedItem.ToString();
 		bvm.PopulateBowDataTable(selectedItem);
 	}
-	
-	//So you will want three total tables: Scores (for review), Arrows, and Bows. This 
-	//would take care of your three objects that you plan on keeping to review. 
-	//Each of these would be a model
 }

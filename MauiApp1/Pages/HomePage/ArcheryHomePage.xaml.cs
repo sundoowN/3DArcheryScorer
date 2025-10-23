@@ -34,13 +34,15 @@ public partial class ArcheryHomePage : ContentPage
 
     private async void RegularScoreCard(object sender, EventArgs e)
     {
-        try
-        {
-            await Navigation.PushAsync(new RegularScoreCardPage()); 
-        }
-        catch(Exception ex)
-        {
-
-        }
+        await Navigation.PushAsync(new RegularScoreCardPage(DateTime.Now.ToString("yyyy-MM-dd")));
     }
+    
+    private async void OpenLancaster(object sender, EventArgs e)
+    {
+        var uri = new Uri("https://www.lancasterarchery.com");
+        await Launcher.Default.OpenAsync(uri);
+    }
+    
+    //TODO: open asaarchery.com
+    //TODO: Notepad/General notes
 }

@@ -100,6 +100,10 @@
 		<data>
 		n+cPdz8Nxn/RNQSCafhZaC/NiZ0=
 		</data>
+		<key>Resources/las.png</key>
+		<data>
+		wg7FLWQTvnum5dywDsIsrH42aeY=
+		</data>
 		<key>Resources/leopar.jpg</key>
 		<data>
 		5CgtFvp0Aw9zC6JtnfflQfQctDw=
@@ -151,14 +155,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YZ690SwGjk4KLPl2h4U25zlZ4EvdcCLrhTw6B+HUSYY=
+			rJ/liOGSE+Gpv3M9BfpmGfcF2cXPJlX0aRfAQrytEUo=
 			</data>
 		</dict>
 		<key>MonoBundle/MauiApp1.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6x+GhZTHFEVKM6kgNs+RF8tJzAJIBXCI2NugR81KGA=
+			SR1FCm/AlvCY0ahnNHgGQdeBHsvHZHrwYBtCdGEUFM0=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1930,6 +1934,13 @@
 			<key>hash2</key>
 			<data>
 			pULIIyg3FyjGe3QRBhpGLIYakiRq77+5LriCae40c1w=
+			</data>
+		</dict>
+		<key>Resources/las.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Af7FoFOHxcxnXXPW84uwVa90CsRD9/eH8RvKrgh+Xbo=
 			</data>
 		</dict>
 		<key>Resources/leopar.jpg</key>
